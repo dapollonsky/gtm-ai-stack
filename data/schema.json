@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dapollonsky/gtm-ai-stack/blob/main/data/schema.json",
+  "title": "GTM AI Stack Entry",
+  "description": "One project that belongs on the GTM AI Stack list. Every entry must answer: what specific GTM job does this do better than not having it?",
+  "type": "object",
+  "required": [
+    "name",
+    "slug",
+    "kind",
+    "url",
+    "repo",
+    "category",
+    "tags",
+    "description",
+    "why_it_matters",
+    "closed_alternative",
+    "stats",
+    "submitted",
+    "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "description": "Display name"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "maxLength": 60,
+      "description": "Kebab-case identifier; must match the YAML filename (without extension)"
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["repo", "hosted", "docs"],
+      "description": "repo = OSS project on GitHub; hosted = vendor-hosted service with open MCP/SDK; docs = docs-only pointer"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Primary URL — product home page or main docs"
+    },
+    "repo": {
+      "type": ["string", "null"],
+      "description": "GitHub repo URL (must be set if kind=repo, may also be set for kind=hosted if an open SDK/MCP repo exists)"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "prospecting",
+        "outbound",
+        "content",
+        "seo",
+        "social",
+        "ads",
+        "meetings",
+        "closing",
+        "plumbing"
+      ]
+    },
+    "tags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "personas",
+        "openness",
+        "maturity",
+        "ai_nativeness",
+        "mcp_ready"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "mcp",
+            "aggregator",
+            "agent",
+            "app",
+            "framework",
+            "skill-pack",
+            "template",
+            "cms",
+            "crm",
+            "library"
+          ]
+        },
+        "personas": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": ["marketer", "sdr-ae", "gtm-eng", "founder"]
+          }
+        },
+        "openness": {
+          "type": "string",
+          "enum": [
+            "oss",
+            "oss-core",
+            "oss-mcp-only",
+            "oss-sdk-only",
+            "oss-skill-pack"
+          ]
+        },
+        "maturity": {
+          "type": "string",
+          "enum": ["production", "beta", "reference", "experimental"]
+        },
+        "ai_nativeness": {
+          "type": "string",
+          "enum": ["ai-native", "ai-enabled", "substrate"]
+        },
+        "mcp_ready": {
+          "type": "boolean"
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 280,
+      "description": "One sentence: what it is"
+    },
+    "why_it_matters": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 400,
+      "description": "One sentence: the specific GTM job it does better than not having it. No marketing fluff."
+    },
+    "closed_alternative": {
+      "type": ["string", "null"],
+      "maxLength": 120,
+      "description": "Name of the closed-source tool this replaces or competes with (e.g., 'Clay', 'Gong'). Null only if it occupies a category with no obvious incumbent."
+    },
+    "stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stars", "last_commit", "license"],
+      "properties": {
+        "stars": { "type": ["integer", "null"], "minimum": 0 },
+        "last_commit": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "license": { "type": ["string", "null"] }
+      },
+      "description": "Auto-refreshed nightly by scripts/fetch-stats.js for kind=repo entries. Leave as nulls at submission time."
+    },
+    "submitted": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date the entry was first added to the list (YYYY-MM-DD)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "watchlist", "archived"],
+      "description": "active = endorsed; watchlist = flagged (stale, early, ToS-risk); archived = upstream archived or no longer maintained"
+    }
+  }
+}

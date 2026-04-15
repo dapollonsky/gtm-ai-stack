@@ -1,0 +1,28 @@
+name: SalesGPT
+slug: salesgpt
+kind: repo
+url: https://github.com/filip-michalsky/SalesGPT
+repo: https://github.com/filip-michalsky/SalesGPT
+category: outbound
+tags:
+  type: agent
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: reference
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Canonical OSS sales agent reference with context-aware stage tracking, LiteLLM provider
+  abstraction, and Stripe plus Calendly tool integrations.
+why_it_matters: >-
+  Still useful as a reference for how to structure sales conversation state, but watchlisted — no
+  commits since September 2024, so not a safe production base for a 2026 build.
+closed_alternative: 11x, Artisan
+stats:
+  stars: 2571
+  last_commit: '2024-09-17'
+  license: MIT
+submitted: '2026-04-15'
+status: watchlist

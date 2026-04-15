@@ -1,0 +1,30 @@
+name: GPT Researcher
+slug: gpt-researcher
+kind: repo
+url: https://github.com/assafelovic/gpt-researcher
+repo: https://github.com/assafelovic/gpt-researcher
+category: prospecting
+tags:
+  type: agent
+  personas:
+    - sdr-ae
+    - marketer
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Autonomous deep-research agent that turns a topic or company name into a cited report through
+  iterative search, scrape, and synthesis.
+why_it_matters: >-
+  The most battle-tested OSS foundation for account research packets in 2026 — sellers get a
+  standalone agent that builds a sourced dossier before every discovery call without paying Clay or
+  Perplexity Enterprise.
+closed_alternative: Clay, Apollo research, Perplexity Enterprise
+stats:
+  stars: 26472
+  last_commit: '2026-03-14'
+  license: Apache-2.0
+submitted: '2026-04-15'
+status: active

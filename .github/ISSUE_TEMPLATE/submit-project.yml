@@ -1,0 +1,156 @@
+name: Submit a project
+description: Suggest a project for the gtm-ai-stack list. The curator will convert approved submissions into YAML PRs — you do not need to touch YAML.
+title: "[submit] <project name>"
+labels: ["submission", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a project. Before you submit, please skim [SCOPE.md](https://github.com/dapollonsky/gtm-ai-stack/blob/main/SCOPE.md) — submissions that fail the 3-rule test will be closed.
+
+        If you are comfortable writing YAML, you can skip this form and open a PR with a file under `data/entries/<slug>.yaml` instead. See [CONTRIBUTING.md](https://github.com/dapollonsky/gtm-ai-stack/blob/main/CONTRIBUTING.md).
+
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      description: The display name. Keep it short — no taglines.
+      placeholder: Twenty
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Primary URL
+      description: Product home page or main docs.
+      placeholder: https://twenty.com
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repo URL
+      description: Required for open-source projects. If this is a hosted product with an open MCP server or SDK, link the repo for that open component.
+      placeholder: https://github.com/twentyhq/twenty
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Pick the primary GTM job. One category only.
+      options:
+        - prospecting — ICP modelling, lead research, account briefs, signal detection, enrichment
+        - outbound — Cold email, sequencers, SDR agents, LinkedIn automation, voice dialers
+        - content — Long-form writing, blog and article drafting, copy generation, repurposing
+        - seo — Keyword research, Search Console analysis, rank tracking, technical SEO, GEO
+        - social — Social scheduling, short-form video, community outreach
+        - ads — Ad copy, creative generation, paid channel automation
+        - meetings — Scheduling, recording, note-taking, call coaching
+        - closing — Proposal writers, RFP agents, contract drafting
+        - plumbing — MCP servers, aggregators, OSS CRMs, agent frameworks, email infrastructure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What kind of thing is it?
+      options:
+        - mcp — MCP server
+        - aggregator — multi-source data or tool aggregator
+        - agent — autonomous agent or agent loop
+        - app — end-user application
+        - framework — agent or SDK framework
+        - skill-pack — Claude Code skills, CrewAI templates, etc.
+        - template — a reference template (not a runnable app)
+        - cms — headless or GTM-oriented CMS
+        - crm — CRM or pipeline tool
+        - library — code library used by GTM agents
+    validations:
+      required: true
+
+  - type: dropdown
+    id: openness
+    attributes:
+      label: Openness
+      description: How is the project open?
+      options:
+        - oss — fully open source
+        - oss-core — open core with closed add-ons
+        - oss-mcp-only — closed product, open MCP server
+        - oss-sdk-only — closed product, open SDK
+        - oss-skill-pack — open skill-pack / template only
+    validations:
+      required: true
+
+  - type: dropdown
+    id: maturity
+    attributes:
+      label: Maturity
+      options:
+        - production — shipped, used by real teams
+        - beta — usable but rough edges
+        - reference — published as a reference, not actively maintained as a product
+        - experimental — early, likely to break
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ai_nativeness
+    attributes:
+      label: AI-nativeness
+      description: See SCOPE.md for the distinction.
+      options:
+        - ai-native — architecture is AI-first; without the LLM it does nothing
+        - ai-enabled — pre-existing product with materially useful AI features
+        - substrate — not AI itself, but widely used as foundation for GTM agents
+    validations:
+      required: true
+
+  - type: textarea
+    id: why_it_matters
+    attributes:
+      label: Why it matters
+      description: |
+        One or two sentences. Name the specific GTM job, the persona, and the outcome.
+        No marketing adjectives. "Powerful, AI-native, best-in-class" is not an answer.
+        Good: "Lets a GTM engineer replace a Clay + Instantly + cron stack with one typed schema where ICP signals, enrichment, and outbound messaging live in one repo."
+        Bad: "A powerful open-source CRM for modern sales teams."
+      placeholder: What specific GTM job does this do better than not having it?
+    validations:
+      required: true
+
+  - type: input
+    id: closed_alternative
+    attributes:
+      label: Closed-source alternative
+      description: |
+        Name the commercial product a user would otherwise buy. "None" is rarely acceptable — see SCOPE.md.
+      placeholder: Salesforce
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for the curator
+      description: Anything else the curator should know? Context, tradeoffs, why this one when similar entries exist.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have read [SCOPE.md](https://github.com/dapollonsky/gtm-ai-stack/blob/main/SCOPE.md) and believe this project passes the 3-rule test.
+          required: true
+        - label: I have checked that this project is not already on the list.
+          required: true
+        - label: I understand that the curator may reject this submission based on editorial judgement even if it passes schema validation.
+          required: true

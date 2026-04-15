@@ -1,0 +1,28 @@
+name: Calendly MCP
+slug: calendly-mcp
+kind: repo
+url: https://github.com/meAmitPatil/calendly-mcp-server
+repo: https://github.com/meAmitPatil/calendly-mcp-server
+category: meetings
+tags:
+  type: mcp
+  personas:
+    - sdr-ae
+    - marketer
+  openness: oss-mcp-only
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Community MCP server for Calendly with tools to list events, manage availability, and create
+  single-use booking links.
+why_it_matters: >-
+  Lets a sales agent schedule discovery calls and demos programmatically inside a longer outbound or
+  nurture flow — the prospect gets a booking link in the same message the agent drafts.
+closed_alternative: Calendly UI
+stats:
+  stars: 10
+  last_commit: '2025-10-17'
+  license: MIT
+submitted: '2026-04-15'
+status: watchlist

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GTM AI Stack Discussions
+    url: https://github.com/dapollonsky/gtm-ai-stack/discussions
+    about: For open-ended questions, category debates, editorial policy discussion, or anything that does not fit "submit a project" or "flag a stale entry." Start here if you are not sure which form to use.

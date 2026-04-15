@@ -1,0 +1,26 @@
+name: AI-ContentCraft
+slug: ai-contentcraft
+kind: repo
+url: https://github.com/nicekate/AI-ContentCraft
+repo: https://github.com/nicekate/AI-ContentCraft
+category: content
+tags:
+  type: app
+  personas:
+    - marketer
+    - founder
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: Unified content suite covering stories, podcasts, and multimedia generation in a single app.
+why_it_matters: >-
+  A useful template for founders and marketing teams building content pipelines that span text and
+  audio — one codebase to crib from instead of stitching Jasper and ElevenLabs together.
+closed_alternative: Jasper, ElevenLabs
+stats:
+  stars: 388
+  last_commit: '2025-07-04'
+  license: null
+submitted: '2026-04-15'
+status: watchlist

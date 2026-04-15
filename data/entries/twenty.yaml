@@ -1,0 +1,30 @@
+name: Twenty
+slug: twenty
+kind: repo
+url: https://twenty.com
+repo: https://github.com/twentyhq/twenty
+category: plumbing
+tags:
+  type: crm
+  personas:
+    - sdr-ae
+    - gtm-eng
+    - founder
+  openness: oss
+  maturity: production
+  ai_nativeness: substrate
+  mcp_ready: true
+description: >-
+  Open-source CRM with a GraphQL and REST API, customisable data model, and a growing ecosystem of
+  MCP servers built against its schema.
+why_it_matters: >-
+  Gives RevOps teams that want full control of pipeline data, custom fields, and workflows a
+  credible core to build on instead of renting Salesforce or HubSpot — and the API is permissive
+  enough for agents to drive the whole thing.
+closed_alternative: Salesforce, HubSpot CRM
+stats:
+  stars: 44009
+  last_commit: '2026-04-15'
+  license: NOASSERTION
+submitted: '2026-04-15'
+status: active

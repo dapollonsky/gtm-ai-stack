@@ -1,0 +1,28 @@
+name: Pipecat
+slug: pipecat
+kind: repo
+url: https://www.pipecat.ai
+repo: https://github.com/pipecat-ai/pipecat
+category: outbound
+tags:
+  type: framework
+  personas:
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: true
+description: >-
+  Realtime voice AI framework with pluggable STT, TTS, and LLM providers plus telephony transports
+  for low-latency voice agents.
+why_it_matters: >-
+  The most active OSS stack for building voice sales bots, cold-call dialers, and lead-qualification
+  agents — enterprises avoid Vapi and Retell's per-minute pricing by running the whole pipeline
+  themselves.
+closed_alternative: Vapi, Retell AI
+stats:
+  stars: 11317
+  last_commit: '2026-04-15'
+  license: BSD-2-Clause
+submitted: '2026-04-15'
+status: active

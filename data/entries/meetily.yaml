@@ -1,0 +1,29 @@
+name: Meetily
+slug: meetily
+kind: repo
+url: https://github.com/Zackriya-Solutions/meeting-minutes
+repo: https://github.com/Zackriya-Solutions/meeting-minutes
+category: meetings
+tags:
+  type: app
+  personas:
+    - sdr-ae
+    - founder
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Self-hosted, privacy-first meeting note-taker with a Rust core that pairs Whisper or Parakeet
+  transcription with local LLM summarisation.
+why_it_matters: >-
+  The closest thing to an OSS Granola a rep can run on their own laptop during sales calls — no
+  audio leaves the machine, no vendor hears the deal terms, and the notes land in the seller's own
+  files.
+closed_alternative: Granola, Fathom, Otter
+stats:
+  stars: 11111
+  last_commit: '2026-03-16'
+  license: MIT
+submitted: '2026-04-15'
+status: active

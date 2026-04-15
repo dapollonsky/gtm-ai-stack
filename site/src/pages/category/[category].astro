@@ -1,0 +1,63 @@
+---
+import Base from '../../layouts/Base.astro';
+import EntryCard from '../../components/EntryCard.astro';
+import entriesData from '../../data/entries.json';
+
+export async function getStaticPaths() {
+  const { categories, entries } = entriesData;
+
+  return categories.map((category) => {
+    const catEntries = entries
+      .filter((e) => e.category === category.id && e.status === 'active')
+      .slice()
+      .sort((a, b) => {
+        const sa = a.stats?.stars ?? -1;
+        const sb = b.stats?.stars ?? -1;
+        if (sb !== sa) return sb - sa;
+        return a.name.localeCompare(b.name);
+      });
+
+    return {
+      params: { category: category.id },
+      props: { category, entries: catEntries },
+    };
+  });
+}
+
+const { category, entries } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const homeHref = base;
+
+const title = `${category.title} — GTM AI Stack`;
+const description = `${category.title}: ${category.blurb}`;
+---
+
+<Base title={title} description={description} activeCategory={category.id}>
+  <a class="back-link" href={homeHref}>&larr; All categories</a>
+
+  <section class="cat-hero">
+    <span class="eyebrow">Category</span>
+    <h1>{category.title}</h1>
+    <p>{category.blurb}</p>
+    <p class="counts" style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--fg-faint); font-variant-numeric: tabular-nums;">
+      {entries.length} {entries.length === 1 ? 'active entry' : 'active entries'}
+    </p>
+  </section>
+
+  <section aria-labelledby="cat-entries-heading">
+    <h2 id="cat-entries-heading" class="sr-only">Entries in {category.title}</h2>
+
+    {entries.length === 0 ? (
+      <div class="empty">
+        <strong>No entries in this category yet.</strong>
+        This category is on the map but doesn't have any vetted entries yet.
+        Submissions welcome — see <code>CONTRIBUTING.md</code>.
+      </div>
+    ) : (
+      <div class="entries">
+        {entries.map((e) => <EntryCard entry={e} />)}
+      </div>
+    )}
+  </section>
+</Base>

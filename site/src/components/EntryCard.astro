@@ -1,0 +1,140 @@
+---
+import Badge from './Badge.astro';
+
+/**
+ * EntryCard — renders one curated entry as an <article>.
+ *
+ * The card is self-filterable: the client-side filter script on the
+ * index page reads `data-*` attributes and toggles the `hidden` attribute.
+ */
+
+interface EntryTags {
+  type: string;
+  personas?: string[];
+  openness?: string;
+  maturity?: string;
+  ai_nativeness: string;
+  mcp_ready?: boolean;
+}
+
+interface EntryStats {
+  stars?: number | null;
+  last_commit?: string | null;
+  license?: string | null;
+}
+
+interface Entry {
+  name: string;
+  slug?: string;
+  kind?: string;
+  url?: string;
+  repo?: string | null;
+  category: string;
+  tags: EntryTags;
+  description: string;
+  why_it_matters: string;
+  closed_alternative?: string | null;
+  stats?: EntryStats;
+  submitted?: string;
+  status?: string;
+  href?: string;
+}
+
+interface Props {
+  entry: Entry;
+}
+
+const { entry } = Astro.props;
+
+const TYPE_LABEL: Record<string, string> = {
+  mcp: 'MCP',
+  aggregator: 'Aggregator',
+  agent: 'Agent',
+  app: 'App',
+  framework: 'Framework',
+  'skill-pack': 'Skill pack',
+  template: 'Template',
+  cms: 'CMS',
+  crm: 'CRM',
+  library: 'Library',
+};
+
+const AI_LABEL: Record<string, string> = {
+  'ai-native': 'AI-native',
+  'ai-enabled': 'AI-enabled',
+  substrate: 'Substrate',
+};
+
+const OPENNESS_LABEL: Record<string, string> = {
+  oss: 'OSS',
+  'oss-core': 'OSS core',
+  'oss-mcp-only': 'OSS MCP',
+  'oss-sdk-only': 'OSS SDK',
+  'oss-skill-pack': 'OSS skills',
+};
+
+const typeLabel = TYPE_LABEL[entry.tags.type] ?? entry.tags.type;
+const aiLabel = AI_LABEL[entry.tags.ai_nativeness] ?? entry.tags.ai_nativeness;
+const opennessLabel = entry.tags.openness
+  ? OPENNESS_LABEL[entry.tags.openness] ?? entry.tags.openness
+  : null;
+const maturity = entry.tags.maturity;
+
+const stars = entry.stats?.stars;
+const starsLabel =
+  typeof stars === 'number'
+    ? stars >= 1000
+      ? `${(stars / 1000).toFixed(1)}k stars`
+      : `${stars} stars`
+    : null;
+const lastCommit = entry.stats?.last_commit ? entry.stats.last_commit.slice(0, 7) : null;
+const license = entry.stats?.license ?? null;
+
+const href = entry.href || entry.repo || entry.url || '#';
+const personas = (entry.tags.personas ?? []).join(',');
+const mcpReady = entry.tags.mcp_ready ? 'true' : 'false';
+
+// lower-cased haystack for client-side text search
+const haystack = [entry.name, entry.description, entry.why_it_matters]
+  .filter(Boolean)
+  .join(' ')
+  .toLowerCase();
+---
+
+<article
+  class="entry-card"
+  data-entry
+  data-name={entry.name}
+  data-category={entry.category}
+  data-type={entry.tags.type}
+  data-ai={entry.tags.ai_nativeness}
+  data-personas={personas}
+  data-mcp={mcpReady}
+  data-search={haystack}
+>
+  <header>
+    <h3>
+      <a href={href} rel="noopener noreferrer" target="_blank">{entry.name}</a>
+    </h3>
+    <div class="badges">
+      <Badge kind="type" label={typeLabel} />
+      <Badge kind={entry.tags.ai_nativeness} label={aiLabel} />
+      {entry.tags.mcp_ready && <Badge kind="mcp" label="MCP" title="MCP-ready" />}
+      {opennessLabel && <Badge kind="openness" label={opennessLabel} />}
+      {maturity && <Badge kind={`maturity-${maturity}`} label={maturity} />}
+    </div>
+  </header>
+
+  <p class="desc">{entry.description}</p>
+
+  {entry.why_it_matters && <p class="why"><strong>Why it matters:</strong> {entry.why_it_matters}</p>}
+
+  <div class="meta">
+    {starsLabel && <span>{starsLabel}</span>}
+    {lastCommit && <span>updated {lastCommit}</span>}
+    {license && <span>{license}</span>}
+    {entry.closed_alternative && (
+      <span class="alt">vs {entry.closed_alternative}</span>
+    )}
+  </div>
+</article>

@@ -1,0 +1,28 @@
+name: OpenFang
+slug: openfang
+kind: repo
+url: https://github.com/RightNow-AI/openfang
+repo: https://github.com/RightNow-AI/openfang
+category: prospecting
+tags:
+  type: agent
+  personas:
+    - sdr-ae
+    - founder
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Scheduled autonomous agent that discovers prospects matching an ICP, enriches them, scores 0 to
+  100, dedupes, and exports to CRM or CSV.
+why_it_matters: >-
+  The closest OSS analogue to stitching Clay together with an AI SDR product — founders and lean
+  sales teams get a lights-out prospect engine without a Clay bill or an 11x contract.
+closed_alternative: Clay + 11x hybrid
+stats:
+  stars: 16646
+  last_commit: '2026-04-10'
+  license: Apache-2.0
+submitted: '2026-04-15'
+status: active

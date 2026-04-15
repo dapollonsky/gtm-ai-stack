@@ -1,0 +1,28 @@
+name: Fire Enrich
+slug: fire-enrich
+kind: repo
+url: https://github.com/firecrawl/fire-enrich
+repo: https://github.com/firecrawl/fire-enrich
+category: prospecting
+tags:
+  type: agent
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Multi-agent enrichment pipeline from Firecrawl with dedicated Company, Fundraising, People, and
+  Product/Tech Stack agents that turn an email into a structured account profile.
+why_it_matters: >-
+  The cleanest OSS stand-in for Clearbit or ZoomInfo enrichment — drop an email in and get back a
+  structured profile, no per-contact fees and no vendor lock-in.
+closed_alternative: Clearbit, Apollo enrichment, ZoomInfo
+stats:
+  stars: 1144
+  last_commit: '2025-10-08'
+  license: MIT
+submitted: '2026-04-15'
+status: watchlist

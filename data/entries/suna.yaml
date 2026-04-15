@@ -1,0 +1,30 @@
+name: Suna
+slug: suna
+kind: repo
+url: https://www.suna.so
+repo: https://github.com/kortix-ai/suna
+category: outbound
+tags:
+  type: agent
+  personas:
+    - sdr-ae
+    - gtm-eng
+    - founder
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-native
+  mcp_ready: true
+description: >-
+  Generalist agent OS built on FastAPI, Next.js, and Supabase with browser and shell tools plus
+  native MCP integration.
+why_it_matters: >-
+  Widely forked by GTM engineers as the base for SDR automation, account research, and cold outbound
+  bots — you get a working agent chassis and plug in your own tools instead of writing one from
+  scratch.
+closed_alternative: Relevance AI, Lindy
+stats:
+  stars: 19611
+  last_commit: '2026-04-15'
+  license: NOASSERTION
+submitted: '2026-04-15'
+status: active

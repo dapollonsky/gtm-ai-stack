@@ -1,0 +1,69 @@
+# Nightly job that refreshes GitHub repo stats in YAML entries and opens a PR with any changes.
+name: refresh-stats
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-stats
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh stats
+        run: npm run refresh:stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Rebuild README and site data
+        run: npm run build
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected from nightly stats refresh. Exiting cleanly."
+          fi
+
+      - name: Create pull request
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: refresh/stats-${{ github.run_id }}
+          commit-message: "chore(data): nightly stats refresh"
+          title: "chore(data): nightly stats refresh"
+          body: |
+            Automated nightly refresh of GitHub repo stats (stars, last commit, license, archived flag) for every `kind=repo` entry. Some entries may have flipped `status` to `archived` or `watchlist` automatically.
+
+            Please review the diff before merging.
+
+            Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          labels: |
+            automated
+            data-refresh
+          delete-branch: true

@@ -1,0 +1,27 @@
+name: AgentGPT
+slug: agentgpt
+kind: repo
+url: https://github.com/reworkd/AgentGPT
+repo: https://github.com/reworkd/AgentGPT
+category: plumbing
+tags:
+  type: agent
+  personas:
+    - gtm-eng
+  openness: oss
+  maturity: reference
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Autonomous agent playground that let users spin up and run goal-oriented agents in the browser,
+  with a rich plugin and tool system.
+why_it_matters: >-
+  Many early GTM teams forked AgentGPT for prospecting and research bots; archived by the reworkd
+  team in April 2025 and kept here for historical reference only, not as a live base to build on.
+closed_alternative: Lindy, Relevance AI
+stats:
+  stars: 35990
+  last_commit: '2025-04-29'
+  license: GPL-3.0
+submitted: '2026-04-15'
+status: archived

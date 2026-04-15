@@ -1,0 +1,28 @@
+name: Firecrawl
+slug: firecrawl
+kind: repo
+url: https://www.firecrawl.dev
+repo: https://github.com/firecrawl/firecrawl
+category: prospecting
+tags:
+  type: library
+  personas:
+    - gtm-eng
+  openness: oss-core
+  maturity: production
+  ai_nativeness: substrate
+  mcp_ready: true
+description: >-
+  Scrape and crawl API that returns LLM-ready markdown, with structured extraction, batch crawling,
+  and an official MCP server.
+why_it_matters: >-
+  The crawler layer behind most OSS lead-research and competitor-monitoring agents — effectively
+  universal in 2026 GTM agent stacks because scraping HTML into clean markdown is the unglamorous
+  step everyone else gets wrong.
+closed_alternative: Bright Data, Apify
+stats:
+  stars: 109485
+  last_commit: '2026-04-15'
+  license: AGPL-3.0
+submitted: '2026-04-15'
+status: active

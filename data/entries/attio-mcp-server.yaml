@@ -1,0 +1,28 @@
+name: Attio MCP Server
+slug: attio-mcp-server
+kind: repo
+url: https://github.com/kesslerio/attio-mcp-server
+repo: https://github.com/kesslerio/attio-mcp-server
+category: plumbing
+tags:
+  type: mcp
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Community MCP server for Attio exposing 35 tools across deals, tasks, lists, people, companies,
+  and notes, with explicit read/write safety annotations.
+why_it_matters: >-
+  Attio shops get a feature-complete agent bridge years before the vendor ships an official server,
+  so reps can let Claude or Cursor update the CRM without leaving the conversation.
+closed_alternative: Attio's native UI
+stats:
+  stars: 65
+  last_commit: '2026-04-09'
+  license: NOASSERTION
+submitted: '2026-04-15'
+status: active

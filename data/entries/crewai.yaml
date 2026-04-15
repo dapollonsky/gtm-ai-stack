@@ -1,0 +1,27 @@
+name: CrewAI
+slug: crewai
+kind: repo
+url: https://www.crewai.com
+repo: https://github.com/crewAIInc/crewAI
+category: plumbing
+tags:
+  type: framework
+  personas:
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: true
+description: >-
+  Multi-agent orchestration framework with official sales, customer-outreach, and market-research
+  crew templates and first-class MCP tool support.
+why_it_matters: >-
+  The most common scaffold GTM engineers reach for when building role-based agent systems — pick a
+  prebuilt crew, swap in your own tools and data, and skip weeks of framework plumbing.
+closed_alternative: LangChain, custom agent scaffolding
+stats:
+  stars: 48953
+  last_commit: '2026-04-15'
+  license: MIT
+submitted: '2026-04-15'
+status: active

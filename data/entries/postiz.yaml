@@ -1,0 +1,28 @@
+name: Postiz
+slug: postiz
+kind: repo
+url: https://postiz.com
+repo: https://github.com/gitroomhq/postiz-app
+category: social
+tags:
+  type: app
+  personas:
+    - marketer
+    - founder
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: false
+description: >-
+  Self-hosted social scheduler with built-in AI generation across X, LinkedIn, Instagram, TikTok,
+  YouTube, Threads, and Bluesky.
+why_it_matters: >-
+  The clearest "replace Buffer" OSS story — very actively maintained, covers every channel a modern
+  founder posts to, and keeps the content history and analytics on the team's own infrastructure.
+closed_alternative: Buffer, Hootsuite, Typefully
+stats:
+  stars: 28613
+  last_commit: '2026-04-15'
+  license: AGPL-3.0
+submitted: '2026-04-15'
+status: active

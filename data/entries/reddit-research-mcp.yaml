@@ -1,0 +1,29 @@
+name: Reddit Research MCP
+slug: reddit-research-mcp
+kind: repo
+url: https://github.com/king-of-the-grackles/reddit-research-mcp
+repo: https://github.com/king-of-the-grackles/reddit-research-mcp
+category: social
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - sdr-ae
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  MCP server that runs semantic search across 20,000+ subreddits, returning posts and comments
+  ranked by relevance rather than recency.
+why_it_matters: >-
+  The bridge between agents and Reddit community intelligence — marketers surface real buyer
+  language and pain points for content ideation and prospect research without paying for Reddit Pro
+  or GummySearch.
+closed_alternative: Reddit Pro, GummySearch
+stats:
+  stars: 105
+  last_commit: '2025-12-11'
+  license: MIT
+submitted: '2026-04-15'
+status: active

@@ -1,0 +1,28 @@
+name: Mautic
+slug: mautic
+kind: repo
+url: https://www.mautic.org
+repo: https://github.com/mautic/mautic
+category: plumbing
+tags:
+  type: app
+  personas:
+    - marketer
+  openness: oss
+  maturity: production
+  ai_nativeness: substrate
+  mcp_ready: false
+description: >-
+  Leading open-source marketing automation platform with email sequences, workflows, forms, landing
+  pages, and segmentation.
+why_it_matters: >-
+  Lets a marketer own their whole automation stack — sequences, segmentation, landing pages — and
+  layer any LLM or agent on top via the API, instead of paying Marketo or HubSpot Marketing Hub
+  forever.
+closed_alternative: Marketo, HubSpot Marketing, Pardot
+stats:
+  stars: 9450
+  last_commit: '2026-04-15'
+  license: NOASSERTION
+submitted: '2026-04-15'
+status: active

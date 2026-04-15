@@ -1,0 +1,29 @@
+name: Clay MCP
+slug: clay-mcp
+kind: hosted
+url: https://github.com/clay-inc/clay-mcp
+repo: https://github.com/clay-inc/clay-mcp
+category: plumbing
+tags:
+  type: mcp
+  personas:
+    - sdr-ae
+    - marketer
+    - gtm-eng
+  openness: oss-mcp-only
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Official Clay MCP hosted at mcp.clay.earth/mcp with tools for contact search, interaction search,
+  add contact, notes, and group management.
+why_it_matters: >-
+  Plugs the enrichment layer that most 2026 GTM engineering teams already depend on straight into
+  agents — the native way to have Claude or Cursor run Clay lookups inside a larger workflow.
+closed_alternative: Clay's native UI
+stats:
+  stars: null
+  last_commit: null
+  license: null
+submitted: '2026-04-15'
+status: active

@@ -1,0 +1,29 @@
+name: Notion MCP
+slug: notion-mcp
+kind: repo
+url: https://github.com/makenotion/notion-mcp-server
+repo: https://github.com/makenotion/notion-mcp-server
+category: plumbing
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - gtm-eng
+    - founder
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Official Notion MCP server exposing 22 tools for pages, databases, blocks, comments, and users
+  across a Notion workspace.
+why_it_matters: >-
+  Makes Notion the live content and docs substrate for marketing agents — briefs, editorial
+  calendars, and campaign specs become readable and writable by Claude or Cursor without copy-paste.
+closed_alternative: Notion AI
+stats:
+  stars: 4218
+  last_commit: '2026-03-18'
+  license: MIT
+submitted: '2026-04-15'
+status: active

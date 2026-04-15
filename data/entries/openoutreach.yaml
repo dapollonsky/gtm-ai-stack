@@ -1,0 +1,29 @@
+name: OpenOutreach
+slug: openoutreach
+kind: repo
+url: https://github.com/eracle/OpenOutreach
+repo: https://github.com/eracle/OpenOutreach
+category: outbound
+tags:
+  type: agent
+  personas:
+    - sdr-ae
+    - founder
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  AI agent that finds LinkedIn leads from a product or ICP brief and drafts outbound messages to
+  them.
+why_it_matters: >-
+  Interesting as a reference for end-to-end LinkedIn outreach automation, but watchlisted because
+  the scraping and automation it performs likely violates LinkedIn's ToS — evaluate legal risk
+  before running it on any real account.
+closed_alternative: Apollo, Lemlist
+stats:
+  stars: 1442
+  last_commit: '2026-04-15'
+  license: NOASSERTION
+submitted: '2026-04-15'
+status: watchlist

@@ -1,0 +1,27 @@
+name: Meta Ads MCP
+slug: meta-ads-mcp
+kind: repo
+url: https://github.com/pipeboard-co/meta-ads-mcp
+repo: https://github.com/pipeboard-co/meta-ads-mcp
+category: ads
+tags:
+  type: mcp
+  personas:
+    - marketer
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Community MCP server for Facebook and Instagram ads with campaign CRUD, performance queries, and
+  creative retrieval.
+why_it_matters: >-
+  The most-used bridge between agents and Meta Ads Manager — lets a paid marketer ask "which ad set
+  is leaking spend" and get an answer back without clicking through seven Ads Manager tabs.
+closed_alternative: Meta Ads Manager UI
+stats:
+  stars: 776
+  last_commit: '2026-04-14'
+  license: NOASSERTION
+submitted: '2026-04-15'
+status: active

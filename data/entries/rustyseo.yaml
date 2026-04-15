@@ -1,0 +1,26 @@
+name: RustySEO
+slug: rustyseo
+kind: repo
+url: https://github.com/mascanho/RustySEO
+repo: https://github.com/mascanho/RustySEO
+category: seo
+tags:
+  type: app
+  personas:
+    - marketer
+    - gtm-eng
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: false
+description: Rust and Tauri desktop SEO and GEO toolkit with log parsing, a crawler, and LLM-driven audits.
+why_it_matters: >-
+  The most promising OSS Screaming Frog alternative with AI-era features — marketers get a native
+  desktop app they own rather than a licensed per-seat crawler.
+closed_alternative: Screaming Frog + Surfer SEO
+stats:
+  stars: 197
+  last_commit: '2026-04-15'
+  license: GPL-3.0
+submitted: '2026-04-15'
+status: active

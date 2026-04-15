@@ -1,0 +1,46 @@
+name: Flag a stale or broken entry
+description: Report an entry that should be removed, archived, or moved to the watchlist.
+title: "[stale] <slug>"
+labels: ["stale", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when an entry on the list is no longer maintained, has changed scope, or has a broken link that automated checks have not caught yet. The curator will review and act.
+
+        See [SCOPE.md § Removal policy](https://github.com/dapollonsky/gtm-ai-stack/blob/main/SCOPE.md#removal-policy) for the rules that govern what happens next.
+
+  - type: input
+    id: slug
+    attributes:
+      label: Entry slug
+      description: The kebab-case slug of the entry (matches the filename in `data/entries/<slug>.yaml`).
+      placeholder: twenty
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      description: Pick the closest match. If none fit, use "scope-change" and explain in the notes.
+      options:
+        - upstream-archived — the upstream repo has been archived
+        - broken-link — the primary URL or repo URL no longer resolves
+        - no-longer-maintained — no commits for a long time, project appears abandoned
+        - ToS-change — license or terms of service changed, self-hosting or OSS use is now impractical
+        - scope-change — the project has pivoted away from a GTM job
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Evidence and context. Link to the archived banner, the last commit, the new ToS, the pivot announcement — whatever supports the flag.
+      placeholder: |
+        - Last commit: 2024-11-12
+        - Archived banner visible at https://github.com/owner/repo
+        - Project pivoted to a consumer app, see blog post: <link>
+    validations:
+      required: true

@@ -1,0 +1,29 @@
+name: auto_rfp
+slug: auto-rfp
+kind: repo
+url: https://github.com/run-llama/auto_rfp
+repo: https://github.com/run-llama/auto_rfp
+category: closing
+tags:
+  type: app
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Next.js 15 and LlamaIndex RFP assistant that extracts questions from uploaded RFPs, retrieves from
+  a knowledge base, and drafts responses.
+why_it_matters: >-
+  The closest thing to an OSS Loopio for sales and solutions teams — takes the worst part of any
+  enterprise deal cycle (filling 200 questions from procurement) and turns it into a reviewable
+  first draft.
+closed_alternative: Loopio, Responsive, RFPIO
+stats:
+  stars: 202
+  last_commit: '2026-01-09'
+  license: MIT
+submitted: '2026-04-15'
+status: active

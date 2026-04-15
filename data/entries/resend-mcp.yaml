@@ -1,0 +1,29 @@
+name: Resend MCP
+slug: resend-mcp
+kind: repo
+url: https://github.com/resend/resend-mcp
+repo: https://github.com/resend/resend-mcp
+category: outbound
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Official Resend MCP server for sending transactional and marketing email and managing contacts,
+  broadcasts, audiences, and domains.
+why_it_matters: >-
+  The cleanest email-sending primitive for agent-driven outbound and newsletters — one tool call
+  gets a drafted email out the door with the deliverability of Resend, no SendGrid contract.
+closed_alternative: SendGrid, Postmark, Mailgun
+stats:
+  stars: 500
+  last_commit: '2026-04-14'
+  license: MIT
+submitted: '2026-04-15'
+status: active

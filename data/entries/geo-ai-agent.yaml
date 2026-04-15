@@ -1,0 +1,27 @@
+name: GEO AI Agent
+slug: geo-ai-agent
+kind: repo
+url: https://github.com/brightdata/geo-ai-agent
+repo: https://github.com/brightdata/geo-ai-agent
+category: seo
+tags:
+  type: agent
+  personas:
+    - marketer
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Bright Data's CrewAI agent for Generative Engine Optimisation that audits how a brand appears
+  across LLM answer engines.
+why_it_matters: >-
+  Measures and improves how a brand shows up in ChatGPT, Perplexity, and Gemini answers — the first
+  OSS answer to closed GEO tools as buyer research shifts from Google to LLM chats.
+closed_alternative: Profound, Athena GEO
+stats:
+  stars: 153
+  last_commit: '2025-10-20'
+  license: null
+submitted: '2026-04-15'
+status: active

@@ -1,0 +1,29 @@
+name: aiwriter
+slug: aiwriter
+kind: repo
+url: https://github.com/kristianfreeman/aiwriter
+repo: https://github.com/kristianfreeman/aiwriter
+category: content
+tags:
+  type: app
+  personas:
+    - marketer
+    - founder
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  SERP-grounded article generator built on Cloudflare Workers and Workers AI that drafts long-form
+  content from a keyword and target SERP.
+why_it_matters: >-
+  A lightweight way for marketers and founders to produce SEO-aware long-form drafts without running
+  their own GPU infrastructure — deploy it to a free Cloudflare account and start shipping posts the
+  same day.
+closed_alternative: Jasper, Surfer SEO
+stats:
+  stars: 296
+  last_commit: '2024-12-22'
+  license: null
+submitted: '2026-04-15'
+status: watchlist

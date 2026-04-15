@@ -1,0 +1,27 @@
+name: Mastra
+slug: mastra
+kind: repo
+url: https://mastra.ai
+repo: https://github.com/mastra-ai/mastra
+category: plumbing
+tags:
+  type: framework
+  personas:
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: true
+description: >-
+  TypeScript-native agent framework from the team behind Gatsby, shipping GTM workflow templates and
+  first-class MCP support.
+why_it_matters: >-
+  The strongest choice for Node and TypeScript shops building GTM agents — keeps the entire stack in
+  TS instead of forcing engineers into Python just to use LangChain.
+closed_alternative: LangChain, Vercel AI SDK
+stats:
+  stars: 23025
+  last_commit: '2026-04-15'
+  license: NOASSERTION
+submitted: '2026-04-15'
+status: active

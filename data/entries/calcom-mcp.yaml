@@ -1,0 +1,29 @@
+name: Cal.com MCP
+slug: calcom-mcp
+kind: repo
+url: https://github.com/Danielpeter-99/calcom-mcp
+repo: https://github.com/Danielpeter-99/calcom-mcp
+category: meetings
+tags:
+  type: mcp
+  personas:
+    - sdr-ae
+    - marketer
+    - gtm-eng
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Community MCP server for the Cal.com scheduler with tools for booking, availability, and event
+  type management.
+why_it_matters: >-
+  Pair it with Cal.com self-hosted for a fully open scheduling stack an agent can drive end-to-end —
+  the right choice for teams that refuse to put their calendar inside Calendly or Chili Piper.
+closed_alternative: Calendly, Chili Piper
+stats:
+  stars: 16
+  last_commit: '2025-06-02'
+  license: MIT
+submitted: '2026-04-15'
+status: watchlist

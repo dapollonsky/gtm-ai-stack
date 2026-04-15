@@ -1,0 +1,28 @@
+name: Klavis AI
+slug: klavis-ai
+kind: repo
+url: https://www.klavis.ai
+repo: https://github.com/Klavis-AI/klavis
+category: plumbing
+tags:
+  type: aggregator
+  personas:
+    - gtm-eng
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Open-source MCP platform with 100+ pre-built integrations (Gmail, Slack, HubSpot, Jira), managed
+  OAuth, a Strata smart router, and sandbox environments for agent eval.
+why_it_matters: >-
+  GTM engineers get a single aggregator that handles OAuth and per-agent tool scoping, plus
+  sandboxes to eval agents before production — the fastest way to go from "interesting prototype" to
+  a tested agent in a real org.
+closed_alternative: Direct per-tool integrations
+stats:
+  stars: 5709
+  last_commit: '2026-04-15'
+  license: Apache-2.0
+submitted: '2026-04-15'
+status: active

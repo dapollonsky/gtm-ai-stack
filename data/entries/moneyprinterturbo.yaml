@@ -1,0 +1,28 @@
+name: MoneyPrinterTurbo
+slug: moneyprinterturbo
+kind: repo
+url: https://github.com/harry0703/MoneyPrinterTurbo
+repo: https://github.com/harry0703/MoneyPrinterTurbo
+category: social
+tags:
+  type: app
+  personas:
+    - marketer
+    - founder
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  One-click AI short-video generator that chains script, TTS, stock footage, and subtitles into a
+  finished vertical video.
+why_it_matters: >-
+  By far the most popular OSS pipeline for shipping TikToks and Shorts — rough edges, but lets a
+  solo marketer go from topic to posted video without touching a timeline editor.
+closed_alternative: Submagic, Opus Clip
+stats:
+  stars: 55749
+  last_commit: '2026-04-11'
+  license: MIT
+submitted: '2026-04-15'
+status: active

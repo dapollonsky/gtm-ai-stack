@@ -1,0 +1,29 @@
+name: Composio
+slug: composio
+kind: repo
+url: https://composio.dev
+repo: https://github.com/ComposioHQ/composio
+category: plumbing
+tags:
+  type: aggregator
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Integration platform with 500+ SaaS tool connectors (HubSpot, Salesforce, LinkedIn, Gmail) and
+  per-agent tool filtering to keep LLM context lean.
+why_it_matters: >-
+  The cleanest option when GTM engineers assemble custom agents on LangGraph or the OpenAI Agents
+  SDK — one SDK loads only the tools the agent actually needs, instead of polluting the context
+  window with hundreds of schemas.
+closed_alternative: Direct per-tool integrations
+stats:
+  stars: 27792
+  last_commit: '2026-04-15'
+  license: MIT
+submitted: '2026-04-15'
+status: active

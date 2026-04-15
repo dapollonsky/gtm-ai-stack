@@ -1,0 +1,28 @@
+name: Ads MCP (multi-platform)
+slug: ads-mcp
+kind: repo
+url: https://github.com/amekala/ads-mcp
+repo: https://github.com/amekala/ads-mcp
+category: ads
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - gtm-eng
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Single MCP server covering Google, Meta, LinkedIn, and TikTok Ads with 100+ tools for campaigns,
+  creatives, and performance reporting.
+why_it_matters: >-
+  The fastest way to give an agent multi-channel paid read/write access from a single endpoint — one
+  install unlocks the whole paid stack instead of running four separate MCP servers.
+closed_alternative: Madgicx, Northbeam
+stats:
+  stars: 30
+  last_commit: '2026-04-02'
+  license: null
+submitted: '2026-04-15'
+status: active

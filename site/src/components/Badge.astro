@@ -1,0 +1,20 @@
+---
+/**
+ * Badge — small pill used for type, ai_nativeness, MCP, openness, maturity.
+ *
+ * Usage:
+ *   <Badge kind="type" label="MCP" />
+ *   <Badge kind="ai-native" label="AI-native" />
+ *   <Badge kind="mcp" label="MCP ready" />
+ *   <Badge kind="maturity-production" label="production" />
+ */
+interface Props {
+  kind: string;
+  label: string;
+  title?: string;
+}
+
+const { kind, label, title } = Astro.props;
+---
+
+<span class={`badge badge--${kind}`} title={title ?? label}>{label}</span>

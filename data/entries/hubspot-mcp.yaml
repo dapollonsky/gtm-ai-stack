@@ -1,0 +1,29 @@
+name: HubSpot MCP
+slug: hubspot-mcp
+kind: hosted
+url: https://developers.hubspot.com/mcp
+repo: null
+category: plumbing
+tags:
+  type: mcp
+  personas:
+    - marketer
+    - sdr-ae
+  openness: oss-mcp-only
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  First-party HubSpot MCP (public beta) hosted at mcp.hubspot.com with tools for contacts,
+  companies, deals, tickets, carts, products, orders, invoices, quotes, subscriptions, lists, and
+  engagements.
+why_it_matters: >-
+  Lets marketers and reps drive the entire HubSpot CRM from an agent without touching the native UI
+  or waiting on Breeze — the default entry point for any HubSpot-shop GTM automation built in 2026.
+closed_alternative: HubSpot's native UI / Breeze AI
+stats:
+  stars: null
+  last_commit: null
+  license: null
+submitted: '2026-04-15'
+status: active

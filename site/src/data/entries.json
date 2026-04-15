@@ -1,0 +1,1588 @@
+{
+  "built_at": "2026-04-15",
+  "categories": [
+    {
+      "id": "prospecting",
+      "title": "Prospecting & Enrichment",
+      "blurb": "ICP modelling, lead research, account briefs, signal detection, data enrichment."
+    },
+    {
+      "id": "outbound",
+      "title": "Outbound",
+      "blurb": "Cold email, sequencers, SDR agents, LinkedIn automation, voice dialers."
+    },
+    {
+      "id": "content",
+      "title": "Content",
+      "blurb": "Long-form writing, blog and article drafting, copy generation, content repurposing."
+    },
+    {
+      "id": "seo",
+      "title": "SEO",
+      "blurb": "Keyword research, Search Console analysis, rank tracking, technical SEO, GEO (generative engine optimisation)."
+    },
+    {
+      "id": "social",
+      "title": "Social",
+      "blurb": "Social scheduling, short-form video, community outreach, Reddit/X/LinkedIn automation."
+    },
+    {
+      "id": "ads",
+      "title": "Ads & Creative",
+      "blurb": "Ad copy, creative generation, paid channel automation, static and video creative for marketing."
+    },
+    {
+      "id": "meetings",
+      "title": "Meetings & Conversation Intelligence",
+      "blurb": "Scheduling, recording, note-taking, and call coaching — for sales conversations."
+    },
+    {
+      "id": "closing",
+      "title": "Closing",
+      "blurb": "Proposal writers, RFP agents, contract drafting, deal-desk automation."
+    },
+    {
+      "id": "plumbing",
+      "title": "Plumbing & Substrate",
+      "blurb": "MCP servers, aggregators, OSS CRMs, agent frameworks, email infrastructure — the layer GTM agents are built on."
+    }
+  ],
+  "entries": [
+    {
+      "name": "Ads MCP (multi-platform)",
+      "slug": "ads-mcp",
+      "kind": "repo",
+      "url": "https://github.com/amekala/ads-mcp",
+      "repo": "https://github.com/amekala/ads-mcp",
+      "category": "ads",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Single MCP server covering Google, Meta, LinkedIn, and TikTok Ads with 100+ tools for campaigns, creatives, and performance reporting.",
+      "why_it_matters": "The fastest way to give an agent multi-channel paid read/write access from a single endpoint — one install unlocks the whole paid stack instead of running four separate MCP servers.",
+      "closed_alternative": "Madgicx, Northbeam",
+      "stats": {
+        "stars": 30,
+        "last_commit": "2026-04-02",
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/amekala/ads-mcp"
+    },
+    {
+      "name": "AgentGPT",
+      "slug": "agentgpt",
+      "kind": "repo",
+      "url": "https://github.com/reworkd/AgentGPT",
+      "repo": "https://github.com/reworkd/AgentGPT",
+      "category": "plumbing",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "reference",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Autonomous agent playground that let users spin up and run goal-oriented agents in the browser, with a rich plugin and tool system.",
+      "why_it_matters": "Many early GTM teams forked AgentGPT for prospecting and research bots; archived by the reworkd team in April 2025 and kept here for historical reference only, not as a live base to build on.",
+      "closed_alternative": "Lindy, Relevance AI",
+      "stats": {
+        "stars": 35990,
+        "last_commit": "2025-04-29",
+        "license": "GPL-3.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "archived",
+      "href": "https://github.com/reworkd/AgentGPT"
+    },
+    {
+      "name": "AI Company Researcher",
+      "slug": "ai-company-researcher",
+      "kind": "repo",
+      "url": "https://github.com/mayooear/ai-company-researcher",
+      "repo": "https://github.com/mayooear/ai-company-researcher",
+      "category": "prospecting",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "sdr-ae"
+        ],
+        "openness": "oss",
+        "maturity": "reference",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "LangGraph and Firecrawl agent that researches a company from a name or domain and returns a structured profile with sources.",
+      "why_it_matters": "A clean reference for how to wire LangGraph and Firecrawl into a company-research agent; archived upstream, so still useful as a fork base for SDRs but not a maintained tool.",
+      "closed_alternative": "Clay, Clearbit",
+      "stats": {
+        "stars": 192,
+        "last_commit": "2026-03-27",
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "archived",
+      "href": "https://github.com/mayooear/ai-company-researcher"
+    },
+    {
+      "name": "AI-ContentCraft",
+      "slug": "ai-contentcraft",
+      "kind": "repo",
+      "url": "https://github.com/nicekate/AI-ContentCraft",
+      "repo": "https://github.com/nicekate/AI-ContentCraft",
+      "category": "content",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "marketer",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Unified content suite covering stories, podcasts, and multimedia generation in a single app.",
+      "why_it_matters": "A useful template for founders and marketing teams building content pipelines that span text and audio — one codebase to crib from instead of stitching Jasper and ElevenLabs together.",
+      "closed_alternative": "Jasper, ElevenLabs",
+      "stats": {
+        "stars": 388,
+        "last_commit": "2025-07-04",
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/nicekate/AI-ContentCraft"
+    },
+    {
+      "name": "AI Marketing Skills",
+      "slug": "ai-marketing-skills",
+      "kind": "repo",
+      "url": "https://github.com/ericosiu/ai-marketing-skills",
+      "repo": "https://github.com/ericosiu/ai-marketing-skills",
+      "category": "outbound",
+      "tags": {
+        "type": "skill-pack",
+        "personas": [
+          "marketer",
+          "sdr-ae",
+          "founder"
+        ],
+        "openness": "oss-skill-pack",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Claude Code skill pack with runnable Python for Sales Pipeline (RB2B Router, Deal Resurrector, Trigger Prospector, ICP Learner), Outbound Engine, Sales Playbook, and Revenue Intelligence modules.",
+      "why_it_matters": "The strongest pure-GTM skill pack in the wild — solo founders and small sales teams can install a dozen named plays (deal resurrection, trigger prospecting, ICP learning) into Claude Code in minutes instead of building them.",
+      "closed_alternative": "Custom Clay + 11x builds",
+      "stats": {
+        "stars": 1823,
+        "last_commit": "2026-04-06",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/ericosiu/ai-marketing-skills"
+    },
+    {
+      "name": "aiwriter",
+      "slug": "aiwriter",
+      "kind": "repo",
+      "url": "https://github.com/kristianfreeman/aiwriter",
+      "repo": "https://github.com/kristianfreeman/aiwriter",
+      "category": "content",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "marketer",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "SERP-grounded article generator built on Cloudflare Workers and Workers AI that drafts long-form content from a keyword and target SERP.",
+      "why_it_matters": "A lightweight way for marketers and founders to produce SEO-aware long-form drafts without running their own GPU infrastructure — deploy it to a free Cloudflare account and start shipping posts the same day.",
+      "closed_alternative": "Jasper, Surfer SEO",
+      "stats": {
+        "stars": 296,
+        "last_commit": "2024-12-22",
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/kristianfreeman/aiwriter"
+    },
+    {
+      "name": "ALwrity",
+      "slug": "alwrity",
+      "kind": "repo",
+      "url": "https://github.com/AJaySi/ALwrity",
+      "repo": "https://github.com/AJaySi/ALwrity",
+      "category": "content",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "marketer"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "End-to-end AI marketing Streamlit suite covering SEO research, blog drafting, image generation, and AI content detection.",
+      "why_it_matters": "One of the few credible OSS alternatives to Jasper, Copy.ai, or Writer that a marketer can self-host today — install it once and stop paying per-seat for a writing tool.",
+      "closed_alternative": "Jasper, Copy.ai, Writer",
+      "stats": {
+        "stars": 983,
+        "last_commit": "2026-04-10",
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/AJaySi/ALwrity"
+    },
+    {
+      "name": "Apollo MCP",
+      "slug": "apollo-mcp",
+      "kind": "repo",
+      "url": "https://github.com/Chainscore/apollo-io-mcp",
+      "repo": "https://github.com/Chainscore/apollo-io-mcp",
+      "category": "prospecting",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Community MCP server for Apollo.io with 27 tools covering people and company search, sequences, and list management.",
+      "why_it_matters": "The most complete community bridge between agents and Apollo until a first-party server ships — SDRs can hand the whole prospecting loop (search → enrich → sequence) to an agent working inside Claude or Cursor.",
+      "closed_alternative": "Apollo's native UI",
+      "stats": {
+        "stars": 1,
+        "last_commit": "2026-02-23",
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/Chainscore/apollo-io-mcp"
+    },
+    {
+      "name": "Attio MCP Server",
+      "slug": "attio-mcp-server",
+      "kind": "repo",
+      "url": "https://github.com/kesslerio/attio-mcp-server",
+      "repo": "https://github.com/kesslerio/attio-mcp-server",
+      "category": "plumbing",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Community MCP server for Attio exposing 35 tools across deals, tasks, lists, people, companies, and notes, with explicit read/write safety annotations.",
+      "why_it_matters": "Attio shops get a feature-complete agent bridge years before the vendor ships an official server, so reps can let Claude or Cursor update the CRM without leaving the conversation.",
+      "closed_alternative": "Attio's native UI",
+      "stats": {
+        "stars": 65,
+        "last_commit": "2026-04-09",
+        "license": "NOASSERTION"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/kesslerio/attio-mcp-server"
+    },
+    {
+      "name": "auto_rfp",
+      "slug": "auto-rfp",
+      "kind": "repo",
+      "url": "https://github.com/run-llama/auto_rfp",
+      "repo": "https://github.com/run-llama/auto_rfp",
+      "category": "closing",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Next.js 15 and LlamaIndex RFP assistant that extracts questions from uploaded RFPs, retrieves from a knowledge base, and drafts responses.",
+      "why_it_matters": "The closest thing to an OSS Loopio for sales and solutions teams — takes the worst part of any enterprise deal cycle (filling 200 questions from procurement) and turns it into a reviewable first draft.",
+      "closed_alternative": "Loopio, Responsive, RFPIO",
+      "stats": {
+        "stars": 202,
+        "last_commit": "2026-01-09",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/run-llama/auto_rfp"
+    },
+    {
+      "name": "Cal.com MCP",
+      "slug": "calcom-mcp",
+      "kind": "repo",
+      "url": "https://github.com/Danielpeter-99/calcom-mcp",
+      "repo": "https://github.com/Danielpeter-99/calcom-mcp",
+      "category": "meetings",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "sdr-ae",
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Community MCP server for the Cal.com scheduler with tools for booking, availability, and event type management.",
+      "why_it_matters": "Pair it with Cal.com self-hosted for a fully open scheduling stack an agent can drive end-to-end — the right choice for teams that refuse to put their calendar inside Calendly or Chili Piper.",
+      "closed_alternative": "Calendly, Chili Piper",
+      "stats": {
+        "stars": 16,
+        "last_commit": "2025-06-02",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/Danielpeter-99/calcom-mcp"
+    },
+    {
+      "name": "Calendly MCP",
+      "slug": "calendly-mcp",
+      "kind": "repo",
+      "url": "https://github.com/meAmitPatil/calendly-mcp-server",
+      "repo": "https://github.com/meAmitPatil/calendly-mcp-server",
+      "category": "meetings",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "sdr-ae",
+          "marketer"
+        ],
+        "openness": "oss-mcp-only",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Community MCP server for Calendly with tools to list events, manage availability, and create single-use booking links.",
+      "why_it_matters": "Lets a sales agent schedule discovery calls and demos programmatically inside a longer outbound or nurture flow — the prospect gets a booking link in the same message the agent drafts.",
+      "closed_alternative": "Calendly UI",
+      "stats": {
+        "stars": 10,
+        "last_commit": "2025-10-17",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/meAmitPatil/calendly-mcp-server"
+    },
+    {
+      "name": "Clay MCP",
+      "slug": "clay-mcp",
+      "kind": "hosted",
+      "url": "https://github.com/clay-inc/clay-mcp",
+      "repo": "https://github.com/clay-inc/clay-mcp",
+      "category": "plumbing",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "sdr-ae",
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss-mcp-only",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Official Clay MCP hosted at mcp.clay.earth/mcp with tools for contact search, interaction search, add contact, notes, and group management.",
+      "why_it_matters": "Plugs the enrichment layer that most 2026 GTM engineering teams already depend on straight into agents — the native way to have Claude or Cursor run Clay lookups inside a larger workflow.",
+      "closed_alternative": "Clay's native UI",
+      "stats": {
+        "stars": null,
+        "last_commit": null,
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/clay-inc/clay-mcp"
+    },
+    {
+      "name": "Composio",
+      "slug": "composio",
+      "kind": "repo",
+      "url": "https://composio.dev",
+      "repo": "https://github.com/ComposioHQ/composio",
+      "category": "plumbing",
+      "tags": {
+        "type": "aggregator",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Integration platform with 500+ SaaS tool connectors (HubSpot, Salesforce, LinkedIn, Gmail) and per-agent tool filtering to keep LLM context lean.",
+      "why_it_matters": "The cleanest option when GTM engineers assemble custom agents on LangGraph or the OpenAI Agents SDK — one SDK loads only the tools the agent actually needs, instead of polluting the context window with hundreds of schemas.",
+      "closed_alternative": "Direct per-tool integrations",
+      "stats": {
+        "stars": 27792,
+        "last_commit": "2026-04-15",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/ComposioHQ/composio"
+    },
+    {
+      "name": "CrewAI",
+      "slug": "crewai",
+      "kind": "repo",
+      "url": "https://www.crewai.com",
+      "repo": "https://github.com/crewAIInc/crewAI",
+      "category": "plumbing",
+      "tags": {
+        "type": "framework",
+        "personas": [
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": true
+      },
+      "description": "Multi-agent orchestration framework with official sales, customer-outreach, and market-research crew templates and first-class MCP tool support.",
+      "why_it_matters": "The most common scaffold GTM engineers reach for when building role-based agent systems — pick a prebuilt crew, swap in your own tools and data, and skip weeks of framework plumbing.",
+      "closed_alternative": "LangChain, custom agent scaffolding",
+      "stats": {
+        "stars": 48953,
+        "last_commit": "2026-04-15",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/crewAIInc/crewAI"
+    },
+    {
+      "name": "Customer Outreach Campaign (CrewAI)",
+      "slug": "customer-outreach-crewai",
+      "kind": "repo",
+      "url": "https://github.com/shaadclt/Customer-Outreach-Campaign-crewAI",
+      "repo": "https://github.com/shaadclt/Customer-Outreach-Campaign-crewAI",
+      "category": "outbound",
+      "tags": {
+        "type": "template",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "reference",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "CrewAI plus LangChain reference template that profiles leads and drafts personalised outreach emails through a small multi-agent crew.",
+      "why_it_matters": "A clean, minimal starting point for GTM engineers building their own outbound crew — shows exactly how to divide lead profiling and email drafting across agents without fighting framework plumbing.",
+      "closed_alternative": "Outreach, Lemlist, Smartlead",
+      "stats": {
+        "stars": 10,
+        "last_commit": "2024-10-12",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/shaadclt/Customer-Outreach-Campaign-crewAI"
+    },
+    {
+      "name": "DataForSEO MCP",
+      "slug": "dataforseo-mcp",
+      "kind": "repo",
+      "url": "https://dataforseo.com",
+      "repo": "https://github.com/dataforseo/mcp-server-typescript",
+      "category": "seo",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss-mcp-only",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Official DataForSEO MCP covering the full DataForSEO API — SERP, keywords, on-page, backlinks, and content analysis.",
+      "why_it_matters": "The most comprehensive agent-ready SEO data layer — one MCP install gets a marketer the same data set Semrush and Ahrefs sell, usable from any MCP-capable client.",
+      "closed_alternative": "Semrush, Ahrefs",
+      "stats": {
+        "stars": 176,
+        "last_commit": "2026-04-14",
+        "license": "Apache-2.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/dataforseo/mcp-server-typescript"
+    },
+    {
+      "name": "Exa MCP",
+      "slug": "exa-mcp",
+      "kind": "repo",
+      "url": "https://docs.exa.ai/reference/exa-mcp",
+      "repo": "https://github.com/exa-labs/exa-mcp-server",
+      "category": "prospecting",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "sdr-ae",
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss-mcp-only",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Official Exa MCP server with neural web search, content extraction, and advanced filters for date, domain, and content type.",
+      "why_it_matters": "The default search primitive for any prospect or account research agent — neural search returns the right company or news item on the first try where keyword search would miss it.",
+      "closed_alternative": "Google search + Perplexity API",
+      "stats": {
+        "stars": 4249,
+        "last_commit": "2026-04-15",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/exa-labs/exa-mcp-server"
+    },
+    {
+      "name": "Fire Enrich",
+      "slug": "fire-enrich",
+      "kind": "repo",
+      "url": "https://github.com/firecrawl/fire-enrich",
+      "repo": "https://github.com/firecrawl/fire-enrich",
+      "category": "prospecting",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Multi-agent enrichment pipeline from Firecrawl with dedicated Company, Fundraising, People, and Product/Tech Stack agents that turn an email into a structured account profile.",
+      "why_it_matters": "The cleanest OSS stand-in for Clearbit or ZoomInfo enrichment — drop an email in and get back a structured profile, no per-contact fees and no vendor lock-in.",
+      "closed_alternative": "Clearbit, Apollo enrichment, ZoomInfo",
+      "stats": {
+        "stars": 1144,
+        "last_commit": "2025-10-08",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/firecrawl/fire-enrich"
+    },
+    {
+      "name": "Firecrawl",
+      "slug": "firecrawl",
+      "kind": "repo",
+      "url": "https://www.firecrawl.dev",
+      "repo": "https://github.com/firecrawl/firecrawl",
+      "category": "prospecting",
+      "tags": {
+        "type": "library",
+        "personas": [
+          "gtm-eng"
+        ],
+        "openness": "oss-core",
+        "maturity": "production",
+        "ai_nativeness": "substrate",
+        "mcp_ready": true
+      },
+      "description": "Scrape and crawl API that returns LLM-ready markdown, with structured extraction, batch crawling, and an official MCP server.",
+      "why_it_matters": "The crawler layer behind most OSS lead-research and competitor-monitoring agents — effectively universal in 2026 GTM agent stacks because scraping HTML into clean markdown is the unglamorous step everyone else gets wrong.",
+      "closed_alternative": "Bright Data, Apify",
+      "stats": {
+        "stars": 109485,
+        "last_commit": "2026-04-15",
+        "license": "AGPL-3.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/firecrawl/firecrawl"
+    },
+    {
+      "name": "GEO AI Agent",
+      "slug": "geo-ai-agent",
+      "kind": "repo",
+      "url": "https://github.com/brightdata/geo-ai-agent",
+      "repo": "https://github.com/brightdata/geo-ai-agent",
+      "category": "seo",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "marketer"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Bright Data's CrewAI agent for Generative Engine Optimisation that audits how a brand appears across LLM answer engines.",
+      "why_it_matters": "Measures and improves how a brand shows up in ChatGPT, Perplexity, and Gemini answers — the first OSS answer to closed GEO tools as buyer research shifts from Google to LLM chats.",
+      "closed_alternative": "Profound, Athena GEO",
+      "stats": {
+        "stars": 153,
+        "last_commit": "2025-10-20",
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/brightdata/geo-ai-agent"
+    },
+    {
+      "name": "Google Ads MCP",
+      "slug": "google-ads-mcp",
+      "kind": "repo",
+      "url": "https://github.com/googleads/google-ads-mcp",
+      "repo": "https://github.com/googleads/google-ads-mcp",
+      "category": "ads",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Official Google Ads MCP exposing campaigns, budgets, keywords, ad groups, and performance queries through first-party tools.",
+      "why_it_matters": "Lets paid teams drive campaigns by natural language without learning the Google Ads UI — the biggest single time-saver for performance marketers running Search and Performance Max in 2026.",
+      "closed_alternative": "Google Ads UI",
+      "stats": {
+        "stars": 377,
+        "last_commit": "2026-04-10",
+        "license": "Apache-2.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/googleads/google-ads-mcp"
+    },
+    {
+      "name": "Google Workspace MCP",
+      "slug": "google-workspace-mcp",
+      "kind": "repo",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "repo": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "category": "plumbing",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "sdr-ae",
+          "gtm-eng",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Full Google Workspace MCP server with OAuth 2.1 multi-user support covering Gmail, Calendar, Drive, Docs, and Sheets behind a single endpoint.",
+      "why_it_matters": "Replaces four or five separate Google integrations with one hardened server, so any GTM agent can read email threads, book meetings, and update spreadsheets without the team standing up its own OAuth gauntlet.",
+      "closed_alternative": "Google Workspace native apps",
+      "stats": {
+        "stars": 2122,
+        "last_commit": "2026-04-15",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/taylorwilsdon/google_workspace_mcp"
+    },
+    {
+      "name": "GPT Researcher",
+      "slug": "gpt-researcher",
+      "kind": "repo",
+      "url": "https://github.com/assafelovic/gpt-researcher",
+      "repo": "https://github.com/assafelovic/gpt-researcher",
+      "category": "prospecting",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "sdr-ae",
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Autonomous deep-research agent that turns a topic or company name into a cited report through iterative search, scrape, and synthesis.",
+      "why_it_matters": "The most battle-tested OSS foundation for account research packets in 2026 — sellers get a standalone agent that builds a sourced dossier before every discovery call without paying Clay or Perplexity Enterprise.",
+      "closed_alternative": "Clay, Apollo research, Perplexity Enterprise",
+      "stats": {
+        "stars": 26472,
+        "last_commit": "2026-03-14",
+        "license": "Apache-2.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/assafelovic/gpt-researcher"
+    },
+    {
+      "name": "HubSpot MCP",
+      "slug": "hubspot-mcp",
+      "kind": "hosted",
+      "url": "https://developers.hubspot.com/mcp",
+      "repo": null,
+      "category": "plumbing",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "sdr-ae"
+        ],
+        "openness": "oss-mcp-only",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "First-party HubSpot MCP (public beta) hosted at mcp.hubspot.com with tools for contacts, companies, deals, tickets, carts, products, orders, invoices, quotes, subscriptions, lists, and engagements.",
+      "why_it_matters": "Lets marketers and reps drive the entire HubSpot CRM from an agent without touching the native UI or waiting on Breeze — the default entry point for any HubSpot-shop GTM automation built in 2026.",
+      "closed_alternative": "HubSpot's native UI / Breeze AI",
+      "stats": {
+        "stars": null,
+        "last_commit": null,
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://developers.hubspot.com/mcp"
+    },
+    {
+      "name": "Hunter MCP",
+      "slug": "hunter-mcp",
+      "kind": "repo",
+      "url": "https://github.com/hunter-io/hunter-mcp",
+      "repo": "https://github.com/hunter-io/hunter-mcp",
+      "category": "prospecting",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng",
+          "marketer"
+        ],
+        "openness": "oss-mcp-only",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Official Hunter MCP server for email finding, verification, and domain search built by Hunter.io.",
+      "why_it_matters": "Lets an agent resolve \"I need a verified email for X at Y\" with a single tool call — no custom integration, no brittle scraping, and no paid-per-seat Hunter UI.",
+      "closed_alternative": "Hunter's native UI",
+      "stats": {
+        "stars": 8,
+        "last_commit": "2025-07-07",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "archived",
+      "href": "https://github.com/hunter-io/hunter-mcp"
+    },
+    {
+      "name": "Klavis AI",
+      "slug": "klavis-ai",
+      "kind": "repo",
+      "url": "https://www.klavis.ai",
+      "repo": "https://github.com/Klavis-AI/klavis",
+      "category": "plumbing",
+      "tags": {
+        "type": "aggregator",
+        "personas": [
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Open-source MCP platform with 100+ pre-built integrations (Gmail, Slack, HubSpot, Jira), managed OAuth, a Strata smart router, and sandbox environments for agent eval.",
+      "why_it_matters": "GTM engineers get a single aggregator that handles OAuth and per-agent tool scoping, plus sandboxes to eval agents before production — the fastest way to go from \"interesting prototype\" to a tested agent in a real org.",
+      "closed_alternative": "Direct per-tool integrations",
+      "stats": {
+        "stars": 5709,
+        "last_commit": "2026-04-15",
+        "license": "Apache-2.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/Klavis-AI/klavis"
+    },
+    {
+      "name": "LiveKit Agents",
+      "slug": "livekit-agents",
+      "kind": "repo",
+      "url": "https://docs.livekit.io/agents/",
+      "repo": "https://github.com/livekit/agents",
+      "category": "outbound",
+      "tags": {
+        "type": "framework",
+        "personas": [
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": true
+      },
+      "description": "Realtime voice and telephony agent framework on LiveKit's WebRTC stack with turn detection, barge-in, and telephony out of the box.",
+      "why_it_matters": "The alternative voice framework to Pipecat for sales-voice builds — gives GTM engineers a production-grade WebRTC transport and telephony plumbing so the team can focus on the call logic, not the audio stack.",
+      "closed_alternative": "Vapi, Retell AI",
+      "stats": {
+        "stars": 10058,
+        "last_commit": "2026-04-15",
+        "license": "Apache-2.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/livekit/agents"
+    },
+    {
+      "name": "Mastra",
+      "slug": "mastra",
+      "kind": "repo",
+      "url": "https://mastra.ai",
+      "repo": "https://github.com/mastra-ai/mastra",
+      "category": "plumbing",
+      "tags": {
+        "type": "framework",
+        "personas": [
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": true
+      },
+      "description": "TypeScript-native agent framework from the team behind Gatsby, shipping GTM workflow templates and first-class MCP support.",
+      "why_it_matters": "The strongest choice for Node and TypeScript shops building GTM agents — keeps the entire stack in TS instead of forcing engineers into Python just to use LangChain.",
+      "closed_alternative": "LangChain, Vercel AI SDK",
+      "stats": {
+        "stars": 23025,
+        "last_commit": "2026-04-15",
+        "license": "NOASSERTION"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/mastra-ai/mastra"
+    },
+    {
+      "name": "Mautic",
+      "slug": "mautic",
+      "kind": "repo",
+      "url": "https://www.mautic.org",
+      "repo": "https://github.com/mautic/mautic",
+      "category": "plumbing",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "marketer"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "substrate",
+        "mcp_ready": false
+      },
+      "description": "Leading open-source marketing automation platform with email sequences, workflows, forms, landing pages, and segmentation.",
+      "why_it_matters": "Lets a marketer own their whole automation stack — sequences, segmentation, landing pages — and layer any LLM or agent on top via the API, instead of paying Marketo or HubSpot Marketing Hub forever.",
+      "closed_alternative": "Marketo, HubSpot Marketing, Pardot",
+      "stats": {
+        "stars": 9450,
+        "last_commit": "2026-04-15",
+        "license": "NOASSERTION"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/mautic/mautic"
+    },
+    {
+      "name": "mcp-gsc",
+      "slug": "mcp-gsc",
+      "kind": "repo",
+      "url": "https://github.com/AminForou/mcp-gsc",
+      "repo": "https://github.com/AminForou/mcp-gsc",
+      "category": "seo",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "MCP server that plugs Google Search Console into Claude or Cursor with tools for query performance, URL inspection, and sitemap status.",
+      "why_it_matters": "Lets a marketer have the model narrate query performance, diagnose ranking drops, and suggest content fixes without opening GSC — the fastest way to turn weekly SEO review meetings into a single Claude thread.",
+      "closed_alternative": "Ahrefs, Semrush",
+      "stats": {
+        "stars": 689,
+        "last_commit": "2026-04-10",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/AminForou/mcp-gsc"
+    },
+    {
+      "name": "Meetily",
+      "slug": "meetily",
+      "kind": "repo",
+      "url": "https://github.com/Zackriya-Solutions/meeting-minutes",
+      "repo": "https://github.com/Zackriya-Solutions/meeting-minutes",
+      "category": "meetings",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "sdr-ae",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Self-hosted, privacy-first meeting note-taker with a Rust core that pairs Whisper or Parakeet transcription with local LLM summarisation.",
+      "why_it_matters": "The closest thing to an OSS Granola a rep can run on their own laptop during sales calls — no audio leaves the machine, no vendor hears the deal terms, and the notes land in the seller's own files.",
+      "closed_alternative": "Granola, Fathom, Otter",
+      "stats": {
+        "stars": 11111,
+        "last_commit": "2026-03-16",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/Zackriya-Solutions/meeting-minutes"
+    },
+    {
+      "name": "Meta Ads MCP",
+      "slug": "meta-ads-mcp",
+      "kind": "repo",
+      "url": "https://github.com/pipeboard-co/meta-ads-mcp",
+      "repo": "https://github.com/pipeboard-co/meta-ads-mcp",
+      "category": "ads",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Community MCP server for Facebook and Instagram ads with campaign CRUD, performance queries, and creative retrieval.",
+      "why_it_matters": "The most-used bridge between agents and Meta Ads Manager — lets a paid marketer ask \"which ad set is leaking spend\" and get an answer back without clicking through seven Ads Manager tabs.",
+      "closed_alternative": "Meta Ads Manager UI",
+      "stats": {
+        "stars": 776,
+        "last_commit": "2026-04-14",
+        "license": "NOASSERTION"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/pipeboard-co/meta-ads-mcp"
+    },
+    {
+      "name": "MoneyPrinterTurbo",
+      "slug": "moneyprinterturbo",
+      "kind": "repo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "repo": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "category": "social",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "marketer",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "One-click AI short-video generator that chains script, TTS, stock footage, and subtitles into a finished vertical video.",
+      "why_it_matters": "By far the most popular OSS pipeline for shipping TikToks and Shorts — rough edges, but lets a solo marketer go from topic to posted video without touching a timeline editor.",
+      "closed_alternative": "Submagic, Opus Clip",
+      "stats": {
+        "stars": 55749,
+        "last_commit": "2026-04-11",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "name": "Microsoft Content Generation Accelerator",
+      "slug": "ms-content-generation-accelerator",
+      "kind": "repo",
+      "url": "https://github.com/microsoft/content-generation-solution-accelerator",
+      "repo": "https://github.com/microsoft/content-generation-solution-accelerator",
+      "category": "content",
+      "tags": {
+        "type": "template",
+        "personas": [
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "reference",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Microsoft's multi-agent marketing content system built on Azure AI Foundry, with reference agents for briefing, drafting, and review.",
+      "why_it_matters": "A reference architecture for enterprise teams spinning up an internal AI content factory — carries Microsoft's name and patterns, which matters for GTM engineers who have to ship inside a procurement-heavy org.",
+      "closed_alternative": "Jasper, Writer",
+      "stats": {
+        "stars": 217,
+        "last_commit": "2026-04-13",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/microsoft/content-generation-solution-accelerator"
+    },
+    {
+      "name": "Notion MCP",
+      "slug": "notion-mcp",
+      "kind": "repo",
+      "url": "https://github.com/makenotion/notion-mcp-server",
+      "repo": "https://github.com/makenotion/notion-mcp-server",
+      "category": "plumbing",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "gtm-eng",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Official Notion MCP server exposing 22 tools for pages, databases, blocks, comments, and users across a Notion workspace.",
+      "why_it_matters": "Makes Notion the live content and docs substrate for marketing agents — briefs, editorial calendars, and campaign specs become readable and writable by Claude or Cursor without copy-paste.",
+      "closed_alternative": "Notion AI",
+      "stats": {
+        "stars": 4218,
+        "last_commit": "2026-03-18",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/makenotion/notion-mcp-server"
+    },
+    {
+      "name": "OpenFang",
+      "slug": "openfang",
+      "kind": "repo",
+      "url": "https://github.com/RightNow-AI/openfang",
+      "repo": "https://github.com/RightNow-AI/openfang",
+      "category": "prospecting",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "sdr-ae",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Scheduled autonomous agent that discovers prospects matching an ICP, enriches them, scores 0 to 100, dedupes, and exports to CRM or CSV.",
+      "why_it_matters": "The closest OSS analogue to stitching Clay together with an AI SDR product — founders and lean sales teams get a lights-out prospect engine without a Clay bill or an 11x contract.",
+      "closed_alternative": "Clay + 11x hybrid",
+      "stats": {
+        "stars": 16646,
+        "last_commit": "2026-04-10",
+        "license": "Apache-2.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/RightNow-AI/openfang"
+    },
+    {
+      "name": "OpenOutreach",
+      "slug": "openoutreach",
+      "kind": "repo",
+      "url": "https://github.com/eracle/OpenOutreach",
+      "repo": "https://github.com/eracle/OpenOutreach",
+      "category": "outbound",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "sdr-ae",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "AI agent that finds LinkedIn leads from a product or ICP brief and drafts outbound messages to them.",
+      "why_it_matters": "Interesting as a reference for end-to-end LinkedIn outreach automation, but watchlisted because the scraping and automation it performs likely violates LinkedIn's ToS — evaluate legal risk before running it on any real account.",
+      "closed_alternative": "Apollo, Lemlist",
+      "stats": {
+        "stars": 1442,
+        "last_commit": "2026-04-15",
+        "license": "NOASSERTION"
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/eracle/OpenOutreach"
+    },
+    {
+      "name": "Pipecat",
+      "slug": "pipecat",
+      "kind": "repo",
+      "url": "https://www.pipecat.ai",
+      "repo": "https://github.com/pipecat-ai/pipecat",
+      "category": "outbound",
+      "tags": {
+        "type": "framework",
+        "personas": [
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": true
+      },
+      "description": "Realtime voice AI framework with pluggable STT, TTS, and LLM providers plus telephony transports for low-latency voice agents.",
+      "why_it_matters": "The most active OSS stack for building voice sales bots, cold-call dialers, and lead-qualification agents — enterprises avoid Vapi and Retell's per-minute pricing by running the whole pipeline themselves.",
+      "closed_alternative": "Vapi, Retell AI",
+      "stats": {
+        "stars": 11317,
+        "last_commit": "2026-04-15",
+        "license": "BSD-2-Clause"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/pipecat-ai/pipecat"
+    },
+    {
+      "name": "Postiz",
+      "slug": "postiz",
+      "kind": "repo",
+      "url": "https://postiz.com",
+      "repo": "https://github.com/gitroomhq/postiz-app",
+      "category": "social",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "marketer",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": false
+      },
+      "description": "Self-hosted social scheduler with built-in AI generation across X, LinkedIn, Instagram, TikTok, YouTube, Threads, and Bluesky.",
+      "why_it_matters": "The clearest \"replace Buffer\" OSS story — very actively maintained, covers every channel a modern founder posts to, and keeps the content history and analytics on the team's own infrastructure.",
+      "closed_alternative": "Buffer, Hootsuite, Typefully",
+      "stats": {
+        "stars": 28613,
+        "last_commit": "2026-04-15",
+        "license": "AGPL-3.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/gitroomhq/postiz-app"
+    },
+    {
+      "name": "Reddit Research MCP",
+      "slug": "reddit-research-mcp",
+      "kind": "repo",
+      "url": "https://github.com/king-of-the-grackles/reddit-research-mcp",
+      "repo": "https://github.com/king-of-the-grackles/reddit-research-mcp",
+      "category": "social",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "sdr-ae"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "MCP server that runs semantic search across 20,000+ subreddits, returning posts and comments ranked by relevance rather than recency.",
+      "why_it_matters": "The bridge between agents and Reddit community intelligence — marketers surface real buyer language and pain points for content ideation and prospect research without paying for Reddit Pro or GummySearch.",
+      "closed_alternative": "Reddit Pro, GummySearch",
+      "stats": {
+        "stars": 105,
+        "last_commit": "2025-12-11",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/king-of-the-grackles/reddit-research-mcp"
+    },
+    {
+      "name": "Resend MCP",
+      "slug": "resend-mcp",
+      "kind": "repo",
+      "url": "https://github.com/resend/resend-mcp",
+      "repo": "https://github.com/resend/resend-mcp",
+      "category": "outbound",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer",
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Official Resend MCP server for sending transactional and marketing email and managing contacts, broadcasts, audiences, and domains.",
+      "why_it_matters": "The cleanest email-sending primitive for agent-driven outbound and newsletters — one tool call gets a drafted email out the door with the deliverability of Resend, no SendGrid contract.",
+      "closed_alternative": "SendGrid, Postmark, Mailgun",
+      "stats": {
+        "stars": 500,
+        "last_commit": "2026-04-14",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/resend/resend-mcp"
+    },
+    {
+      "name": "RustySEO",
+      "slug": "rustyseo",
+      "kind": "repo",
+      "url": "https://github.com/mascanho/RustySEO",
+      "repo": "https://github.com/mascanho/RustySEO",
+      "category": "seo",
+      "tags": {
+        "type": "app",
+        "personas": [
+          "marketer",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": false
+      },
+      "description": "Rust and Tauri desktop SEO and GEO toolkit with log parsing, a crawler, and LLM-driven audits.",
+      "why_it_matters": "The most promising OSS Screaming Frog alternative with AI-era features — marketers get a native desktop app they own rather than a licensed per-seat crawler.",
+      "closed_alternative": "Screaming Frog + Surfer SEO",
+      "stats": {
+        "stars": 197,
+        "last_commit": "2026-04-15",
+        "license": "GPL-3.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/mascanho/RustySEO"
+    },
+    {
+      "name": "Sales Outreach Automation (LangGraph)",
+      "slug": "sales-outreach-automation-langgraph",
+      "kind": "repo",
+      "url": "https://github.com/kaymen99/sales-outreach-automation-langgraph",
+      "repo": "https://github.com/kaymen99/sales-outreach-automation-langgraph",
+      "category": "prospecting",
+      "tags": {
+        "type": "template",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "reference",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "End-to-end LangGraph template that chains LinkedIn, website, and news research into a pain-point report and syncs the result to HubSpot, Airtable, or Sheets.",
+      "why_it_matters": "A clean reference architecture GTM engineers can fork to stand up a custom outbound pipeline — shows exactly how to wire research, scoring, and CRM sync into a single LangGraph flow.",
+      "closed_alternative": "Clay, Outreach workflows",
+      "stats": {
+        "stars": 273,
+        "last_commit": "2025-01-15",
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/kaymen99/sales-outreach-automation-langgraph"
+    },
+    {
+      "name": "Salesforce DX MCP",
+      "slug": "salesforce-dx-mcp",
+      "kind": "repo",
+      "url": "https://github.com/salesforcecli/mcp",
+      "repo": "https://github.com/salesforcecli/mcp",
+      "category": "plumbing",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Official Salesforce MCP server spanning DX tooling and CRM data, with SOQL queries, metadata operations, and user management under Apache-2.0.",
+      "why_it_matters": "Gives RevOps and GTM engineers in Salesforce-shop orgs a first-party, actively-maintained agent interface to pipeline data and admin actions — no more brittle Einstein or Apex copilot glue.",
+      "closed_alternative": "Salesforce Einstein / Apex copilots",
+      "stats": {
+        "stars": 355,
+        "last_commit": "2026-04-15",
+        "license": "Apache-2.0"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/salesforcecli/mcp"
+    },
+    {
+      "name": "SalesGPT",
+      "slug": "salesgpt",
+      "kind": "repo",
+      "url": "https://github.com/filip-michalsky/SalesGPT",
+      "repo": "https://github.com/filip-michalsky/SalesGPT",
+      "category": "outbound",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng"
+        ],
+        "openness": "oss",
+        "maturity": "reference",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "Canonical OSS sales agent reference with context-aware stage tracking, LiteLLM provider abstraction, and Stripe plus Calendly tool integrations.",
+      "why_it_matters": "Still useful as a reference for how to structure sales conversation state, but watchlisted — no commits since September 2024, so not a safe production base for a 2026 build.",
+      "closed_alternative": "11x, Artisan",
+      "stats": {
+        "stars": 2571,
+        "last_commit": "2024-09-17",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "watchlist",
+      "href": "https://github.com/filip-michalsky/SalesGPT"
+    },
+    {
+      "name": "SEO Research MCP",
+      "slug": "seo-research-mcp",
+      "kind": "repo",
+      "url": "https://github.com/egebese/seo-research-mcp",
+      "repo": "https://github.com/egebese/seo-research-mcp",
+      "category": "seo",
+      "tags": {
+        "type": "mcp",
+        "personas": [
+          "marketer"
+        ],
+        "openness": "oss-mcp-only",
+        "maturity": "beta",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Ahrefs-backed MCP server exposing keyword research and backlink analysis tools to any MCP-capable AI client.",
+      "why_it_matters": "Useful for marketing engineers who want to run Ahrefs-quality SEO research from inside Claude Code or Cursor — keeps the workflow in the editor instead of bouncing into Ahrefs' UI.",
+      "closed_alternative": "Ahrefs UI",
+      "stats": {
+        "stars": 171,
+        "last_commit": "2026-01-07",
+        "license": "NOASSERTION"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/egebese/seo-research-mcp"
+    },
+    {
+      "name": "Suna",
+      "slug": "suna",
+      "kind": "repo",
+      "url": "https://www.suna.so",
+      "repo": "https://github.com/kortix-ai/suna",
+      "category": "outbound",
+      "tags": {
+        "type": "agent",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "beta",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": true
+      },
+      "description": "Generalist agent OS built on FastAPI, Next.js, and Supabase with browser and shell tools plus native MCP integration.",
+      "why_it_matters": "Widely forked by GTM engineers as the base for SDR automation, account research, and cold outbound bots — you get a working agent chassis and plug in your own tools instead of writing one from scratch.",
+      "closed_alternative": "Relevance AI, Lindy",
+      "stats": {
+        "stars": 19611,
+        "last_commit": "2026-04-15",
+        "license": "NOASSERTION"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/kortix-ai/suna"
+    },
+    {
+      "name": "Twenty",
+      "slug": "twenty",
+      "kind": "repo",
+      "url": "https://twenty.com",
+      "repo": "https://github.com/twentyhq/twenty",
+      "category": "plumbing",
+      "tags": {
+        "type": "crm",
+        "personas": [
+          "sdr-ae",
+          "gtm-eng",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "production",
+        "ai_nativeness": "substrate",
+        "mcp_ready": true
+      },
+      "description": "Open-source CRM with a GraphQL and REST API, customisable data model, and a growing ecosystem of MCP servers built against its schema.",
+      "why_it_matters": "Gives RevOps teams that want full control of pipeline data, custom fields, and workflows a credible core to build on instead of renting Salesforce or HubSpot — and the API is permissive enough for agents to drive the whole thing.",
+      "closed_alternative": "Salesforce, HubSpot CRM",
+      "stats": {
+        "stars": 44009,
+        "last_commit": "2026-04-15",
+        "license": "NOASSERTION"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/twentyhq/twenty"
+    },
+    {
+      "name": "Viral Clips Crew",
+      "slug": "viral-clips-crew",
+      "kind": "repo",
+      "url": "https://github.com/alexfazio/viral-clips-crew",
+      "repo": "https://github.com/alexfazio/viral-clips-crew",
+      "category": "social",
+      "tags": {
+        "type": "template",
+        "personas": [
+          "marketer",
+          "founder"
+        ],
+        "openness": "oss",
+        "maturity": "reference",
+        "ai_nativeness": "ai-native",
+        "mcp_ready": false
+      },
+      "description": "CrewAI template that edits long-form video into viral clips through transcription, highlight selection, and cutting agents.",
+      "why_it_matters": "The cleanest reference architecture for a video-repurposing agent — easy to fork for podcast or YouTube pipelines, so a single founder can run what used to be an editor's entire job.",
+      "closed_alternative": "Opus Clip, Vizard",
+      "stats": {
+        "stars": 755,
+        "last_commit": "2026-02-16",
+        "license": "MIT"
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/alexfazio/viral-clips-crew"
+    },
+    {
+      "name": "Zapier MCP",
+      "slug": "zapier-mcp",
+      "kind": "hosted",
+      "url": "https://mcp.zapier.com",
+      "repo": "https://github.com/zapier/zapier-mcp",
+      "category": "plumbing",
+      "tags": {
+        "type": "aggregator",
+        "personas": [
+          "marketer",
+          "sdr-ae",
+          "gtm-eng",
+          "founder"
+        ],
+        "openness": "oss-mcp-only",
+        "maturity": "production",
+        "ai_nativeness": "ai-enabled",
+        "mcp_ready": true
+      },
+      "description": "Remote MCP server from Zapier that exposes 9,000+ apps and 40,000+ actions through a single endpoint.",
+      "why_it_matters": "Instantly gives an agent read/write access to Outreach, Salesloft, Front, Lemlist, ActiveCampaign, Marketo, Iterable, Close, and every other tool without a native MCP — the fastest way to backfill a long tail of GTM integrations.",
+      "closed_alternative": "Direct per-tool integrations",
+      "stats": {
+        "stars": null,
+        "last_commit": null,
+        "license": null
+      },
+      "submitted": "2026-04-15",
+      "status": "active",
+      "href": "https://github.com/zapier/zapier-mcp"
+    }
+  ],
+  "counts": {
+    "active": 39,
+    "watchlist": 9,
+    "archived": 3
+  }
+}

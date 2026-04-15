@@ -1,0 +1,31 @@
+name: AI Marketing Skills
+slug: ai-marketing-skills
+kind: repo
+url: https://github.com/ericosiu/ai-marketing-skills
+repo: https://github.com/ericosiu/ai-marketing-skills
+category: outbound
+tags:
+  type: skill-pack
+  personas:
+    - marketer
+    - sdr-ae
+    - founder
+  openness: oss-skill-pack
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Claude Code skill pack with runnable Python for Sales Pipeline (RB2B Router, Deal Resurrector,
+  Trigger Prospector, ICP Learner), Outbound Engine, Sales Playbook, and Revenue Intelligence
+  modules.
+why_it_matters: >-
+  The strongest pure-GTM skill pack in the wild — solo founders and small sales teams can install a
+  dozen named plays (deal resurrection, trigger prospecting, ICP learning) into Claude Code in
+  minutes instead of building them.
+closed_alternative: Custom Clay + 11x builds
+stats:
+  stars: 1823
+  last_commit: '2026-04-06'
+  license: MIT
+submitted: '2026-04-15'
+status: active

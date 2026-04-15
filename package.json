@@ -1,0 +1,30 @@
+{
+  "name": "gtm-ai-stack",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A curated, editorially-maintained map of AI-native tools and MCP plumbing for go-to-market teams.",
+  "homepage": "https://github.com/dapollonsky/gtm-ai-stack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dapollonsky/gtm-ai-stack.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build": "node scripts/build.js",
+    "refresh:stats": "node scripts/fetch-stats.js",
+    "check:links": "node scripts/link-check.js",
+    "check": "npm run validate && npm run build && npm run check:links",
+    "site:dev": "cd site && npm run dev",
+    "site:build": "cd site && npm install && npm run build"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "js-yaml": "^4.1.0"
+  }
+}

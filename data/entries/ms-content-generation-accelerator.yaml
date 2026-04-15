@@ -1,0 +1,29 @@
+name: Microsoft Content Generation Accelerator
+slug: ms-content-generation-accelerator
+kind: repo
+url: https://github.com/microsoft/content-generation-solution-accelerator
+repo: https://github.com/microsoft/content-generation-solution-accelerator
+category: content
+tags:
+  type: template
+  personas:
+    - marketer
+    - gtm-eng
+  openness: oss
+  maturity: reference
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  Microsoft's multi-agent marketing content system built on Azure AI Foundry, with reference agents
+  for briefing, drafting, and review.
+why_it_matters: >-
+  A reference architecture for enterprise teams spinning up an internal AI content factory — carries
+  Microsoft's name and patterns, which matters for GTM engineers who have to ship inside a
+  procurement-heavy org.
+closed_alternative: Jasper, Writer
+stats:
+  stars: 217
+  last_commit: '2026-04-13'
+  license: MIT
+submitted: '2026-04-15'
+status: active

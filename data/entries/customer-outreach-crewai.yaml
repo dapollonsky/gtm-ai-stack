@@ -1,0 +1,28 @@
+name: Customer Outreach Campaign (CrewAI)
+slug: customer-outreach-crewai
+kind: repo
+url: https://github.com/shaadclt/Customer-Outreach-Campaign-crewAI
+repo: https://github.com/shaadclt/Customer-Outreach-Campaign-crewAI
+category: outbound
+tags:
+  type: template
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: reference
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  CrewAI plus LangChain reference template that profiles leads and drafts personalised outreach
+  emails through a small multi-agent crew.
+why_it_matters: >-
+  A clean, minimal starting point for GTM engineers building their own outbound crew — shows exactly
+  how to divide lead profiling and email drafting across agents without fighting framework plumbing.
+closed_alternative: Outreach, Lemlist, Smartlead
+stats:
+  stars: 10
+  last_commit: '2024-10-12'
+  license: MIT
+submitted: '2026-04-15'
+status: watchlist

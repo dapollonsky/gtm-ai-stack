@@ -1,0 +1,28 @@
+name: Salesforce DX MCP
+slug: salesforce-dx-mcp
+kind: repo
+url: https://github.com/salesforcecli/mcp
+repo: https://github.com/salesforcecli/mcp
+category: plumbing
+tags:
+  type: mcp
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Official Salesforce MCP server spanning DX tooling and CRM data, with SOQL queries, metadata
+  operations, and user management under Apache-2.0.
+why_it_matters: >-
+  Gives RevOps and GTM engineers in Salesforce-shop orgs a first-party, actively-maintained agent
+  interface to pipeline data and admin actions — no more brittle Einstein or Apex copilot glue.
+closed_alternative: Salesforce Einstein / Apex copilots
+stats:
+  stars: 355
+  last_commit: '2026-04-15'
+  license: Apache-2.0
+submitted: '2026-04-15'
+status: active

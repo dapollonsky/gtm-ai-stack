@@ -1,0 +1,29 @@
+name: Exa MCP
+slug: exa-mcp
+kind: repo
+url: https://docs.exa.ai/reference/exa-mcp
+repo: https://github.com/exa-labs/exa-mcp-server
+category: prospecting
+tags:
+  type: mcp
+  personas:
+    - sdr-ae
+    - marketer
+    - gtm-eng
+  openness: oss-mcp-only
+  maturity: production
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Official Exa MCP server with neural web search, content extraction, and advanced filters for date,
+  domain, and content type.
+why_it_matters: >-
+  The default search primitive for any prospect or account research agent — neural search returns
+  the right company or news item on the first try where keyword search would miss it.
+closed_alternative: Google search + Perplexity API
+stats:
+  stars: 4249
+  last_commit: '2026-04-15'
+  license: MIT
+submitted: '2026-04-15'
+status: active

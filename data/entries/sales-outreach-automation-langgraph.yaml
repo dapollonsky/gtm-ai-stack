@@ -1,0 +1,28 @@
+name: Sales Outreach Automation (LangGraph)
+slug: sales-outreach-automation-langgraph
+kind: repo
+url: https://github.com/kaymen99/sales-outreach-automation-langgraph
+repo: https://github.com/kaymen99/sales-outreach-automation-langgraph
+category: prospecting
+tags:
+  type: template
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: reference
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  End-to-end LangGraph template that chains LinkedIn, website, and news research into a pain-point
+  report and syncs the result to HubSpot, Airtable, or Sheets.
+why_it_matters: >-
+  A clean reference architecture GTM engineers can fork to stand up a custom outbound pipeline —
+  shows exactly how to wire research, scoring, and CRM sync into a single LangGraph flow.
+closed_alternative: Clay, Outreach workflows
+stats:
+  stars: 273
+  last_commit: '2025-01-15'
+  license: null
+submitted: '2026-04-15'
+status: watchlist

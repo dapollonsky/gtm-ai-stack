@@ -1,0 +1,28 @@
+name: LiveKit Agents
+slug: livekit-agents
+kind: repo
+url: https://docs.livekit.io/agents/
+repo: https://github.com/livekit/agents
+category: outbound
+tags:
+  type: framework
+  personas:
+    - gtm-eng
+  openness: oss
+  maturity: production
+  ai_nativeness: ai-native
+  mcp_ready: true
+description: >-
+  Realtime voice and telephony agent framework on LiveKit's WebRTC stack with turn detection,
+  barge-in, and telephony out of the box.
+why_it_matters: >-
+  The alternative voice framework to Pipecat for sales-voice builds — gives GTM engineers a
+  production-grade WebRTC transport and telephony plumbing so the team can focus on the call logic,
+  not the audio stack.
+closed_alternative: Vapi, Retell AI
+stats:
+  stars: 10058
+  last_commit: '2026-04-15'
+  license: Apache-2.0
+submitted: '2026-04-15'
+status: active

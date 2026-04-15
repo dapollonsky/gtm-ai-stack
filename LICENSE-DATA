@@ -1,0 +1,29 @@
+Data License — Creative Commons Attribution-ShareAlike 4.0 International
+
+The code in this repository (scripts, site, build tooling) is licensed under
+the MIT License (see LICENSE).
+
+The editorial data — specifically the YAML entries in `data/entries/`, the
+generated `README.md`, and any rendered list pages under `site/` derived from
+those entries — are licensed separately under the Creative Commons
+Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0).
+
+What this means in practice:
+
+- You may copy, redistribute, remix, transform, and build upon the entry data
+  for any purpose, including commercially.
+- You must give appropriate credit to gtm-ai-stack and its contributors, link
+  to this repository, and indicate if changes were made.
+- If you remix or build upon the data, you must distribute your contributions
+  under the same CC BY-SA 4.0 license.
+
+Full license text and legal code:
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Human-readable summary:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+This dual-licensing is deliberate: the tooling should be reusable under a
+permissive license, but the curated list itself is a collective editorial
+work and should stay open under a copyleft license so that downstream copies
+cannot enclose it.

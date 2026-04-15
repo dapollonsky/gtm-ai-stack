@@ -1,0 +1,27 @@
+name: SEO Research MCP
+slug: seo-research-mcp
+kind: repo
+url: https://github.com/egebese/seo-research-mcp
+repo: https://github.com/egebese/seo-research-mcp
+category: seo
+tags:
+  type: mcp
+  personas:
+    - marketer
+  openness: oss-mcp-only
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Ahrefs-backed MCP server exposing keyword research and backlink analysis tools to any MCP-capable
+  AI client.
+why_it_matters: >-
+  Useful for marketing engineers who want to run Ahrefs-quality SEO research from inside Claude Code
+  or Cursor — keeps the workflow in the editor instead of bouncing into Ahrefs' UI.
+closed_alternative: Ahrefs UI
+stats:
+  stars: 171
+  last_commit: '2026-01-07'
+  license: NOASSERTION
+submitted: '2026-04-15'
+status: active

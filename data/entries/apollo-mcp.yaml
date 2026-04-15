@@ -1,0 +1,29 @@
+name: Apollo MCP
+slug: apollo-mcp
+kind: repo
+url: https://github.com/Chainscore/apollo-io-mcp
+repo: https://github.com/Chainscore/apollo-io-mcp
+category: prospecting
+tags:
+  type: mcp
+  personas:
+    - sdr-ae
+    - gtm-eng
+  openness: oss
+  maturity: beta
+  ai_nativeness: ai-enabled
+  mcp_ready: true
+description: >-
+  Community MCP server for Apollo.io with 27 tools covering people and company search, sequences,
+  and list management.
+why_it_matters: >-
+  The most complete community bridge between agents and Apollo until a first-party server ships —
+  SDRs can hand the whole prospecting loop (search → enrich → sequence) to an agent working inside
+  Claude or Cursor.
+closed_alternative: Apollo's native UI
+stats:
+  stars: 1
+  last_commit: '2026-02-23'
+  license: null
+submitted: '2026-04-15'
+status: active

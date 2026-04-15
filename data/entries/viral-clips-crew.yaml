@@ -1,0 +1,28 @@
+name: Viral Clips Crew
+slug: viral-clips-crew
+kind: repo
+url: https://github.com/alexfazio/viral-clips-crew
+repo: https://github.com/alexfazio/viral-clips-crew
+category: social
+tags:
+  type: template
+  personas:
+    - marketer
+    - founder
+  openness: oss
+  maturity: reference
+  ai_nativeness: ai-native
+  mcp_ready: false
+description: >-
+  CrewAI template that edits long-form video into viral clips through transcription, highlight
+  selection, and cutting agents.
+why_it_matters: >-
+  The cleanest reference architecture for a video-repurposing agent — easy to fork for podcast or
+  YouTube pipelines, so a single founder can run what used to be an editor's entire job.
+closed_alternative: Opus Clip, Vizard
+stats:
+  stars: 755
+  last_commit: '2026-02-16'
+  license: MIT
+submitted: '2026-04-15'
+status: active
