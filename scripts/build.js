@@ -58,6 +58,18 @@ const CATEGORIES = [
   },
 ];
 
+const CATEGORY_EMOJI = {
+  prospecting: '🧲',
+  outbound: '🚀',
+  content: '✍️',
+  seo: '🔍',
+  social: '📱',
+  ads: '💰',
+  meetings: '🎙️',
+  closing: '🏆',
+  plumbing: '🔌',
+};
+
 const TYPE_LABEL = {
   mcp: 'MCP',
   aggregator: 'Aggregator',
@@ -76,15 +88,6 @@ const AI_LABEL = {
   'ai-enabled': 'AI-enabled',
   substrate: 'Substrate',
 };
-
-function slugifyAnchor(s) {
-  return s
-    .toLowerCase()
-    .replace(/&/g, '')
-    .replace(/[^\w\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-');
-}
 
 function formatStars(n) {
   if (n == null) return '—';
@@ -133,12 +136,12 @@ function renderCategorySection(cat, entries) {
     if (sb !== sa) return sb - sa;
     return a.name.localeCompare(b.name);
   });
+  const emoji = CATEGORY_EMOJI[cat.id] || '';
   return [
-    `## ${cat.title}`,
+    `<a id="${cat.id}"></a>`,
+    `### ${emoji} ${cat.title}`,
     '',
-    cat.blurb,
-    '',
-    '| Project | Type | AI | MCP | Stars | Last commit | Why it matters |',
+    '| Project | Type | AI | MCP | ⭐ | 🔄 | Why |',
     '|---|---|---|---|---|---|---|',
     sorted.map(renderEntryRow).join('\n'),
     '',
@@ -158,36 +161,40 @@ async function main() {
 
   const toc = CATEGORIES
     .filter((c) => byCategory[c.id].length > 0)
-    .map((c) => `- [${c.title}](#${slugifyAnchor(c.title)}) — ${byCategory[c.id].length}`);
-  if (watchlist.length > 0) toc.push('- [Watchlist](#watchlist)');
-  if (archived.length > 0) toc.push('- [Archive](#archive)');
+    .map((c) => `- [${CATEGORY_EMOJI[c.id]} ${c.title}](#${c.id}) — ${byCategory[c.id].length}`);
+  if (watchlist.length > 0) toc.push('- [⚠️ Watchlist](#watchlist)');
+  if (archived.length > 0) toc.push('- [📦 Archive](#archive)');
 
-  const sections = CATEGORIES.map((c) => renderCategorySection(c, byCategory[c.id])).filter(Boolean);
+  const sections = CATEGORIES
+    .map((c) => renderCategorySection(c, byCategory[c.id]))
+    .filter(Boolean);
 
   const watchlistSection = watchlist.length
     ? [
-        '## Watchlist',
+        '<a id="watchlist"></a>',
+        '### ⚠️ Watchlist',
         '',
-        'Projects listed but not fully endorsed — stale maintenance, ToS risk, very early, or otherwise requiring caution.',
+        '_Flagged but not fully endorsed — stale maintenance, ToS risk, very early._',
         '',
         ...watchlist
           .slice()
           .sort((a, b) => a.name.localeCompare(b.name))
-          .map((e) => `- [${e.name}](${e.repo || e.url}) — ${e.why_it_matters}`),
+          .map((e) => `- **[${e.name}](${e.repo || e.url})** — ${e.why_it_matters}`),
         '',
       ].join('\n')
     : '';
 
   const archivedSection = archived.length
     ? [
-        '## Archive',
+        '<a id="archive"></a>',
+        '### 📦 Archive',
         '',
-        'Previously listed projects, now archived upstream or no longer maintained. Kept for historical reference.',
+        '_Archived upstream — kept for historical reference._',
         '',
         ...archived
           .slice()
           .sort((a, b) => a.name.localeCompare(b.name))
-          .map((e) => `- [${e.name}](${e.repo || e.url}) — ${e.why_it_matters}`),
+          .map((e) => `- **[${e.name}](${e.repo || e.url})** — ${e.why_it_matters}`),
         '',
       ].join('\n')
     : '';
@@ -195,50 +202,40 @@ async function main() {
   const today = new Date().toISOString().slice(0, 10);
 
   const md = [
-    '# GTM AI Stack',
+    '```text',
+    ' ██████╗ ████████╗███╗   ███╗     █████╗ ██╗    ███████╗████████╗ █████╗  ██████╗██╗  ██╗',
+    '██╔════╝ ╚══██╔══╝████╗ ████║    ██╔══██╗██║    ██╔════╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝',
+    '██║  ███╗   ██║   ██╔████╔██║    ███████║██║    ███████╗   ██║   ███████║██║     █████╔╝ ',
+    '██║   ██║   ██║   ██║╚██╔╝██║    ██╔══██║██║    ╚════██║   ██║   ██╔══██║██║     ██╔═██╗ ',
+    '╚██████╔╝   ██║   ██║ ╚═╝ ██║    ██║  ██║██║    ███████║   ██║   ██║  ██║╚██████╗██║  ██╗',
+    ' ╚═════╝    ╚═╝   ╚═╝     ╚═╝    ╚═╝  ╚═╝╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝',
+    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+    '          ░▒▓  AI × go-to-market, from prospecting to plumbing  ▓▒░',
+    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+    '```',
     '',
-    '**A curated, editorially-maintained map of AI-native tools and MCP plumbing for go-to-market teams.**',
+    `🎯 **${active.length} active** · ⚠️ **${watchlist.length} watchlist** · 📦 **${archived.length} archived** · 🔄 built ${today}`,
     '',
-    `${active.length} active · ${watchlist.length} watchlist · ${archived.length} archived · built ${today}`,
+    '> Generated from [`data/entries/*.yaml`](data/entries) — open a PR against a YAML entry, not this file.',
     '',
-    '> This README is generated from [`data/entries/*.yaml`](data/entries). Do not edit it directly — open a PR against a YAML entry and CI will rebuild.',
+    '## ⚡ What',
     '',
-    '## What this is',
+    'A curated, editorially-maintained map of AI-native tools and MCP plumbing for go-to-market teams — sales, marketing, and the plumbing that powers them. Every entry answers one question: **what specific GTM job does this do better than not having it?**',
     '',
-    'An opinionated, funnel-aligned list of AI tools that help revenue teams (marketers, SDRs, AEs, founders, GTM engineers) do more, faster. Every entry has to answer one question: **what specific GTM job does this do better than not having it?**',
+    '→ [`SCOPE.md`](SCOPE.md) · [`CONTRIBUTING.md`](CONTRIBUTING.md)',
     '',
-    'Three tiers of the stack live here side-by-side:',
-    '',
-    '1. **Plumbing** — MCP servers, aggregators, OSS CRMs, agent frameworks. The substrate agents are built on.',
-    '2. **Agents & apps** — End-user tools and autonomous agents for specific GTM jobs.',
-    '3. **Skill packs & templates** — Claude Code skills, CrewAI templates, n8n flows — ready-to-install recipes.',
-    '',
-    'What this is **not**: an AI-tool dump. See [`SCOPE.md`](SCOPE.md) for what is in and out, and [`CONTRIBUTING.md`](CONTRIBUTING.md) to submit an entry.',
-    '',
-    '## Why this exists',
-    '',
-    'Existing awesome-lists either (a) cover AI agents generally with no GTM taxonomy, (b) list MCP servers without telling you which ones matter for revenue teams, or (c) silo sales-only vs marketing-only. None map the full GTM funnel against AI tooling with explicit quality criteria and automated pruning. This list does.',
-    '',
-    '## Site',
-    '',
-    'A searchable, filterable version of this list: **[gtm-ai-stack.dev](https://dapollonsky.github.io/gtm-ai-stack/)** _(live once GitHub Pages is enabled)_.',
-    '',
-    '## Contents',
+    '## 🗺️ The stack',
     '',
     toc.join('\n'),
+    '',
+    '---',
     '',
     sections.join('\n'),
     watchlistSection,
     archivedSection,
-    '## Editorial',
+    '---',
     '',
-    '- **[SCOPE.md](SCOPE.md)** — the editorial constitution (what is in, what is out, and why)',
-    '- **[CONTRIBUTING.md](CONTRIBUTING.md)** — how to submit, schema reference, PR rules',
-    '- **License** — code under [MIT](LICENSE); entry data under [CC-BY-SA 4.0](LICENSE-DATA)',
-    '',
-    '## Acknowledgements',
-    '',
-    'Prior work that informed scoping: [Specter — AI × GTM Landscape 2025](https://insights.tryspecter.com/ai-x-gtm-landscape-2025/), [joylarkin/Awesome-AI-Market-Maps](https://github.com/joylarkin/Awesome-AI-Market-Maps), [Menlo 2025 State of Generative AI in the Enterprise](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/), and the broader MCP community.',
+    '🌐 [Site](https://dapollonsky.github.io/gtm-ai-stack/) · 🎯 [marketing-ai-stack](https://github.com/dapollonsky/marketing-ai-stack) (stricter marketer-first view) · 📜 [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)',
     '',
   ]
     .filter((x) => x !== '')
