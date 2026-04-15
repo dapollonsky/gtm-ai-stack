@@ -1,15 +1,10 @@
 name: Pipecat
 slug: pipecat
-kind: repo
 url: https://www.pipecat.ai
 repo: https://github.com/pipecat-ai/pipecat
 category: outbound
 tags:
   type: framework
-  personas:
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: true
 description: >-

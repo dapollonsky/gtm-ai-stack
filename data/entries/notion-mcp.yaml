@@ -1,17 +1,10 @@
 name: Notion MCP
 slug: notion-mcp
-kind: repo
 url: https://github.com/makenotion/notion-mcp-server
 repo: https://github.com/makenotion/notion-mcp-server
 category: plumbing
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

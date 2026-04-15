@@ -1,17 +1,10 @@
 name: Resend MCP
 slug: resend-mcp
-kind: repo
 url: https://github.com/resend/resend-mcp
 repo: https://github.com/resend/resend-mcp
 category: outbound
 tags:
   type: mcp
-  personas:
-    - marketer
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

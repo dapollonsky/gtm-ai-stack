@@ -1,16 +1,10 @@
 name: Ads MCP (multi-platform)
 slug: ads-mcp
-kind: repo
 url: https://github.com/amekala/ads-mcp
 repo: https://github.com/amekala/ads-mcp
 category: ads
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

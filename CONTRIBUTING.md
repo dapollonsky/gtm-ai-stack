@@ -21,14 +21,9 @@ Display name of the project. Max 80 chars.
 - **Bad:** `Twenty — the open source CRM that will replace Salesforce (AI-native!)` — this is marketing copy, not a name.
 
 ### `slug`
-Kebab-case identifier that **must match the YAML filename without the `.yaml` extension**. Used for deep links, dedup checks, and the site URL.
+Kebab-case identifier that **must match the YAML filename without the `.yaml` extension**. Used for deep links, dedup checks, and anchor targets.
 - **Good:** `twenty` (file: `data/entries/twenty.yaml`)
 - **Bad:** `Twenty_CRM` — wrong case, wrong separator, will not validate.
-
-### `kind`
-One of `repo` (OSS project on GitHub), `hosted` (vendor-hosted service with an open MCP or SDK), or `docs` (a docs-only pointer, rare).
-- **Good:** `repo` for a GitHub project; `hosted` for a SaaS that ships an open MCP server.
-- **Bad:** `repo` on a closed SaaS with no source available — this will be caught by the curator if not CI.
 
 ### `url`
 Primary URL. Product home page or main docs. Must resolve (link check runs nightly).
@@ -36,7 +31,7 @@ Primary URL. Product home page or main docs. Must resolve (link check runs night
 - **Bad:** `https://github.com/twentyhq/twenty/blob/main/README.md#features` — deep link, not the home.
 
 ### `repo`
-GitHub repo URL. Required when `kind=repo`. May be set for `kind=hosted` if an open SDK/MCP repo exists.
+GitHub repo URL. `null` is allowed for hosted services without an open component.
 - **Good:** `https://github.com/twentyhq/twenty`
 - **Bad:** `https://twentyhq.com` — that is a product page, not a repo.
 
@@ -44,7 +39,13 @@ GitHub repo URL. Required when `kind=repo`. May be set for `kind=hosted` if an o
 Exactly one of the nine categories in [SCOPE.md](./SCOPE.md). Pick the primary job. No cross-posting.
 
 ### `tags`
-An object with six required keys: `type`, `personas`, `openness`, `maturity`, `ai_nativeness`, `mcp_ready`. Every enum is in the schema. Read it.
+Three required keys:
+
+- **`type`** — one of `mcp`, `aggregator`, `agent`, `app`, `framework`, `skill-pack`, `template`, `cms`, `crm`, `library`.
+- **`ai_nativeness`** — one of `ai-native`, `ai-enabled`, `substrate`. See [SCOPE.md](./SCOPE.md) for the distinction.
+- **`mcp_ready`** — boolean. `true` if the project is or ships an MCP server.
+
+That's it. Three fields. Friction-per-submission is deliberately low.
 
 ### `description`
 One sentence, 10 to 280 chars. What it is.
@@ -60,7 +61,7 @@ Name the incumbent it replaces or competes with. Do not write "none" unless you 
 - **Bad:** `none` for a CRM. There are closed CRMs. Name one.
 
 ### `stats`, `submitted`, `status`
-Leave `stats` fields as `null` at submission time — `scripts/fetch-stats.js` fills them nightly for `kind=repo`. Set `submitted` to today's date. Set `status` to `active` unless you are knowingly adding a `watchlist` entry.
+Leave `stats` fields as `null` at submission time — `scripts/fetch-stats.js` fills them nightly for entries with a repo URL. Set `submitted` to today's date. Set `status` to `active` unless you are knowingly adding a `watchlist` entry.
 
 ## How to write a good `why_it_matters`
 
@@ -93,7 +94,7 @@ Name the commercial product a prospective user would otherwise buy. This is not 
 ```bash
 npm install
 npm run validate   # schema + dedup check
-npm run build      # regenerates README.md and the site data from data/entries/
+npm run build      # regenerates README.md from data/entries/
 ```
 
 Before you open a PR, also run:

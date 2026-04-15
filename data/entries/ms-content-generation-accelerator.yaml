@@ -1,16 +1,10 @@
 name: Microsoft Content Generation Accelerator
 slug: ms-content-generation-accelerator
-kind: repo
 url: https://github.com/microsoft/content-generation-solution-accelerator
 repo: https://github.com/microsoft/content-generation-solution-accelerator
 category: content
 tags:
   type: template
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: reference
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

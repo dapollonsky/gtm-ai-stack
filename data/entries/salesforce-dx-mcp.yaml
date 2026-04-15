@@ -1,16 +1,10 @@
 name: Salesforce DX MCP
 slug: salesforce-dx-mcp
-kind: repo
 url: https://github.com/salesforcecli/mcp
 repo: https://github.com/salesforcecli/mcp
 category: plumbing
 tags:
   type: mcp
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

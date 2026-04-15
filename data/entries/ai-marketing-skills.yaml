@@ -1,17 +1,10 @@
 name: AI Marketing Skills
 slug: ai-marketing-skills
-kind: repo
 url: https://github.com/ericosiu/ai-marketing-skills
 repo: https://github.com/ericosiu/ai-marketing-skills
 category: outbound
 tags:
   type: skill-pack
-  personas:
-    - marketer
-    - sdr-ae
-    - founder
-  openness: oss-skill-pack
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

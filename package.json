@@ -1,6 +1,6 @@
 {
   "name": "gtm-ai-stack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "A curated, editorially-maintained map of AI-native tools and MCP plumbing for go-to-market teams.",
@@ -18,9 +18,7 @@
     "build": "node scripts/build.js",
     "refresh:stats": "node scripts/fetch-stats.js",
     "check:links": "node scripts/link-check.js",
-    "check": "npm run validate && npm run build && npm run check:links",
-    "site:dev": "cd site && npm run dev",
-    "site:build": "cd site && npm install && npm run build"
+    "check": "npm run validate && npm run build && npm run check:links"
   },
   "devDependencies": {
     "ajv": "^8.17.1",

@@ -1,16 +1,10 @@
 name: Customer Outreach Campaign (CrewAI)
 slug: customer-outreach-crewai
-kind: repo
 url: https://github.com/shaadclt/Customer-Outreach-Campaign-crewAI
 repo: https://github.com/shaadclt/Customer-Outreach-Campaign-crewAI
 category: outbound
 tags:
   type: template
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: reference
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

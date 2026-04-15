@@ -1,17 +1,10 @@
 name: Cal.com MCP
 slug: calcom-mcp
-kind: repo
 url: https://github.com/Danielpeter-99/calcom-mcp
 repo: https://github.com/Danielpeter-99/calcom-mcp
 category: meetings
 tags:
   type: mcp
-  personas:
-    - sdr-ae
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

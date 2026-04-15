@@ -1,16 +1,10 @@
 name: RustySEO
 slug: rustyseo
-kind: repo
 url: https://github.com/mascanho/RustySEO
 repo: https://github.com/mascanho/RustySEO
 category: seo
 tags:
   type: app
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: false
 description: Rust and Tauri desktop SEO and GEO toolkit with log parsing, a crawler, and LLM-driven audits.

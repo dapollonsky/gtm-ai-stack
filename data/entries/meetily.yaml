@@ -1,16 +1,10 @@
 name: Meetily
 slug: meetily
-kind: repo
 url: https://github.com/Zackriya-Solutions/meeting-minutes
 repo: https://github.com/Zackriya-Solutions/meeting-minutes
 category: meetings
 tags:
   type: app
-  personas:
-    - sdr-ae
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

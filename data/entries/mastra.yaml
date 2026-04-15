@@ -1,15 +1,10 @@
 name: Mastra
 slug: mastra
-kind: repo
 url: https://mastra.ai
 repo: https://github.com/mastra-ai/mastra
 category: plumbing
 tags:
   type: framework
-  personas:
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: true
 description: >-

@@ -1,16 +1,10 @@
 name: DataForSEO MCP
 slug: dataforseo-mcp
-kind: repo
 url: https://dataforseo.com
 repo: https://github.com/dataforseo/mcp-server-typescript
 category: seo
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss-mcp-only
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

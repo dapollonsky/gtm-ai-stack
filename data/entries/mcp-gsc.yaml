@@ -1,16 +1,10 @@
 name: mcp-gsc
 slug: mcp-gsc
-kind: repo
 url: https://github.com/AminForou/mcp-gsc
 repo: https://github.com/AminForou/mcp-gsc
 category: seo
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

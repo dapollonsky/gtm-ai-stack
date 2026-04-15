@@ -1,15 +1,10 @@
 name: AgentGPT
 slug: agentgpt
-kind: repo
 url: https://github.com/reworkd/AgentGPT
 repo: https://github.com/reworkd/AgentGPT
 category: plumbing
 tags:
   type: agent
-  personas:
-    - gtm-eng
-  openness: oss
-  maturity: reference
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

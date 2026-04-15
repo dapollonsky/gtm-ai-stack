@@ -145,4 +145,4 @@ _Archived upstream — kept for historical reference._
 - **[Hunter MCP](https://github.com/hunter-io/hunter-mcp)** — Lets an agent resolve "I need a verified email for X at Y" with a single tool call — no custom integration, no brittle scraping, and no paid-per-seat Hunter UI.
 
 ---
-🌐 [Site](https://dapollonsky.github.io/gtm-ai-stack/) · 🎯 [marketing-ai-stack](https://github.com/dapollonsky/marketing-ai-stack) (stricter marketer-first view) · 📜 [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)
+🎯 [marketing-ai-stack](https://github.com/dapollonsky/marketing-ai-stack) (stricter marketer-first view) · 📜 [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)

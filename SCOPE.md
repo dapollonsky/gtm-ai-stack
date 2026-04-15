@@ -21,7 +21,7 @@ An entry must pass all three rules or it is rejected on review.
 - **RevOps forecasting and pipeline analytics.** Out of scope. Interesting category, not this list.
 - **Generic chatbots and general-purpose assistants.** If the GTM framing is "you could use this to write a cold email," that is not enough.
 - **Pure LLM wrappers with no GTM framing.** Another prompt template for ChatGPT is not an entry.
-- **Dead projects.** Archived upstream, no commits in 180+ days with no `reference` designation, broken links that stay broken — these age out automatically.
+- **Dead projects.** Archived upstream, no commits in 180+ days, broken links that stay broken — these age out automatically.
 
 ## The 9 categories
 
@@ -51,22 +51,26 @@ The failure mode for any list like this is entropy — every new "AI tool for sa
 
 - **`why_it_matters` is mandatory and specific.** One sentence. Name the job, the persona, the outcome. Marketing adjectives get rejected on review. "Fast and reliable" is not a reason.
 - **`closed_alternative` is mandatory unless genuinely none exists.** If you cannot name the incumbent, either the category is too small to matter or you have not done the research. Null is allowed but rare and scrutinized.
-- **Automated nightly pruning.** `scripts/fetch-stats.js` refreshes stars, last commit, and license for every `kind=repo` entry. `scripts/link-check.js` checks every URL. Entries that fail these checks are flagged for review, not silently hidden.
+- **Automated nightly pruning.** `scripts/fetch-stats.js` refreshes stars, last commit, and license for every entry with a repo URL. `scripts/link-check.js` checks every URL. Entries that fail these checks are flagged for review, not silently hidden.
 - **Editorial judgement over breadth.** Two strong entries beat ten mediocre ones. The curator will reject submissions that technically pass schema validation if they fail the sniff test.
-- **Hard cap on skill-packs.** Claude Code skills, CrewAI templates, and other skill-pack entries are secondary. They are useful as examples of what agents can do, not as load-bearing infrastructure. Ceiling: roughly 10% of total entries, reviewed quarterly.
+- **Minimal schema.** Three required tag fields — `type`, `ai_nativeness`, `mcp_ready`. Friction-per-submission is deliberately low so contributors don't bail halfway.
 
 ## Removal policy
 
 - **Upstream archived** → entry status flipped to `archived`, kept on the list with a note, no longer shown in the default view.
-- **No commits in 180 days and not tagged `reference`** → moved to `watchlist` for curator review; may return to `active` with justification or age out.
+- **No commits in 180 days** → moved to `watchlist` for curator review; may return to `active` with justification or age out.
 - **Broken links** → automated PR opened by `scripts/link-check.js`; curator fixes or removes.
 - **ToS change making self-hosting or OSS use impractical** → flagged via the stale-entry issue form, reviewed, usually removed.
 - **Scope change** (project pivots away from GTM) → removed with a note in the commit history.
 
 ## Closed-source policy
 
-Closed-source tools that dominate a category get exactly one line in a **Market Context** section at the top of the relevant category. Format: name, one-sentence description, link. No tags, no writeups, no stars. This exists so readers can orient themselves against the commercial landscape — not to promote closed products. If a closed tool later ships a meaningful OSS component (MCP server, SDK, self-hostable core), it can graduate to a full entry under the appropriate `openness` value.
+Closed-source tools that dominate a category get exactly one line in a **Market Context** section at the top of the relevant category. Format: name, one-sentence description, link. No tags, no writeups, no stars. This exists so readers can orient themselves against the commercial landscape — not to promote closed products. If a closed tool later ships a meaningful OSS component (MCP server, SDK, self-hostable core), it can graduate to a full entry.
 
 ## Calling the shot
 
 This list will be wrong sometimes. Categories will shift, incumbents will change, projects will die. The editorial model is curator + community PRs with template-enforced schema and CI gates. When in doubt, the curator's judgement wins, and the curator's judgement is accountable to this document. If you disagree with a decision, open an issue — but read this file first.
+
+## Relationship to marketing-ai-stack
+
+[`marketing-ai-stack`](https://github.com/dapollonsky/marketing-ai-stack) is a stricter, marketer-first subset of this list. It cuts sales, meetings, and closing entirely, and applies a tighter daily-workflow filter. If your question is "what can a marketer install this week to automate marketing work?" read that list. If your question is "what's happening in AI for go-to-market broadly?" stay here.

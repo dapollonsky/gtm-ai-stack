@@ -1,15 +1,10 @@
 name: CrewAI
 slug: crewai
-kind: repo
 url: https://www.crewai.com
 repo: https://github.com/crewAIInc/crewAI
 category: plumbing
 tags:
   type: framework
-  personas:
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: true
 description: >-

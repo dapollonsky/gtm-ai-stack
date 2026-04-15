@@ -6,9 +6,5 @@ dist/
 .env.*
 !.env.example
 
-site/node_modules/
-site/dist/
-site/.astro/
-
 .vercel/
 .output/

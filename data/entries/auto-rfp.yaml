@@ -1,16 +1,10 @@
 name: auto_rfp
 slug: auto-rfp
-kind: repo
 url: https://github.com/run-llama/auto_rfp
 repo: https://github.com/run-llama/auto_rfp
 category: closing
 tags:
   type: app
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

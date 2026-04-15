@@ -7,7 +7,6 @@
   "required": [
     "name",
     "slug",
-    "kind",
     "url",
     "repo",
     "category",
@@ -33,11 +32,6 @@
       "maxLength": 60,
       "description": "Kebab-case identifier; must match the YAML filename (without extension)"
     },
-    "kind": {
-      "type": "string",
-      "enum": ["repo", "hosted", "docs"],
-      "description": "repo = OSS project on GitHub; hosted = vendor-hosted service with open MCP/SDK; docs = docs-only pointer"
-    },
     "url": {
       "type": "string",
       "format": "uri",
@@ -45,7 +39,7 @@
     },
     "repo": {
       "type": ["string", "null"],
-      "description": "GitHub repo URL (must be set if kind=repo, may also be set for kind=hosted if an open SDK/MCP repo exists)"
+      "description": "GitHub repo URL. May be null for hosted services without an open component."
     },
     "category": {
       "type": "string",
@@ -64,14 +58,7 @@
     "tags": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "type",
-        "personas",
-        "openness",
-        "maturity",
-        "ai_nativeness",
-        "mcp_ready"
-      ],
+      "required": ["type", "ai_nativeness", "mcp_ready"],
       "properties": {
         "type": {
           "type": "string",
@@ -87,29 +74,6 @@
             "crm",
             "library"
           ]
-        },
-        "personas": {
-          "type": "array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "enum": ["marketer", "sdr-ae", "gtm-eng", "founder"]
-          }
-        },
-        "openness": {
-          "type": "string",
-          "enum": [
-            "oss",
-            "oss-core",
-            "oss-mcp-only",
-            "oss-sdk-only",
-            "oss-skill-pack"
-          ]
-        },
-        "maturity": {
-          "type": "string",
-          "enum": ["production", "beta", "reference", "experimental"]
         },
         "ai_nativeness": {
           "type": "string",
@@ -146,7 +110,7 @@
         "last_commit": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
         "license": { "type": ["string", "null"] }
       },
-      "description": "Auto-refreshed nightly by scripts/fetch-stats.js for kind=repo entries. Leave as nulls at submission time."
+      "description": "Auto-refreshed nightly by scripts/fetch-stats.js for entries with a repo URL. Leave as nulls at submission time."
     },
     "submitted": {
       "type": "string",

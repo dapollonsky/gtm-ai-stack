@@ -1,16 +1,10 @@
 name: AI-ContentCraft
 slug: ai-contentcraft
-kind: repo
 url: https://github.com/nicekate/AI-ContentCraft
 repo: https://github.com/nicekate/AI-ContentCraft
 category: content
 tags:
   type: app
-  personas:
-    - marketer
-    - founder
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-native
   mcp_ready: false
 description: Unified content suite covering stories, podcasts, and multimedia generation in a single app.

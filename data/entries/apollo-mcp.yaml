@@ -1,16 +1,10 @@
 name: Apollo MCP
 slug: apollo-mcp
-kind: repo
 url: https://github.com/Chainscore/apollo-io-mcp
 repo: https://github.com/Chainscore/apollo-io-mcp
 category: prospecting
 tags:
   type: mcp
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

@@ -1,15 +1,10 @@
 name: ALwrity
 slug: alwrity
-kind: repo
 url: https://github.com/AJaySi/ALwrity
 repo: https://github.com/AJaySi/ALwrity
 category: content
 tags:
   type: app
-  personas:
-    - marketer
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

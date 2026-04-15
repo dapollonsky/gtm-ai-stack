@@ -1,17 +1,10 @@
 name: Clay MCP
 slug: clay-mcp
-kind: hosted
 url: https://github.com/clay-inc/clay-mcp
 repo: https://github.com/clay-inc/clay-mcp
 category: plumbing
 tags:
   type: mcp
-  personas:
-    - sdr-ae
-    - marketer
-    - gtm-eng
-  openness: oss-mcp-only
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

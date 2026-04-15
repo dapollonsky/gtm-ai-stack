@@ -1,16 +1,10 @@
 name: aiwriter
 slug: aiwriter
-kind: repo
 url: https://github.com/kristianfreeman/aiwriter
 repo: https://github.com/kristianfreeman/aiwriter
 category: content
 tags:
   type: app
-  personas:
-    - marketer
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

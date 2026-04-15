@@ -1,15 +1,10 @@
 name: GEO AI Agent
 slug: geo-ai-agent
-kind: repo
 url: https://github.com/brightdata/geo-ai-agent
 repo: https://github.com/brightdata/geo-ai-agent
 category: seo
 tags:
   type: agent
-  personas:
-    - marketer
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

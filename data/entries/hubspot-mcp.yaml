@@ -1,16 +1,10 @@
 name: HubSpot MCP
 slug: hubspot-mcp
-kind: hosted
 url: https://developers.hubspot.com/mcp
 repo: null
 category: plumbing
 tags:
   type: mcp
-  personas:
-    - marketer
-    - sdr-ae
-  openness: oss-mcp-only
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

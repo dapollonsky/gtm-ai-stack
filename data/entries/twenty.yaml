@@ -1,17 +1,10 @@
 name: Twenty
 slug: twenty
-kind: repo
 url: https://twenty.com
 repo: https://github.com/twentyhq/twenty
 category: plumbing
 tags:
   type: crm
-  personas:
-    - sdr-ae
-    - gtm-eng
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: substrate
   mcp_ready: true
 description: >-

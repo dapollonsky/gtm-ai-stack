@@ -1,16 +1,10 @@
 name: Sales Outreach Automation (LangGraph)
 slug: sales-outreach-automation-langgraph
-kind: repo
 url: https://github.com/kaymen99/sales-outreach-automation-langgraph
 repo: https://github.com/kaymen99/sales-outreach-automation-langgraph
 category: prospecting
 tags:
   type: template
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: reference
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

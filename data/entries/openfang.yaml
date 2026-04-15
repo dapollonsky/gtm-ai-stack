@@ -1,16 +1,10 @@
 name: OpenFang
 slug: openfang
-kind: repo
 url: https://github.com/RightNow-AI/openfang
 repo: https://github.com/RightNow-AI/openfang
 category: prospecting
 tags:
   type: agent
-  personas:
-    - sdr-ae
-    - founder
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

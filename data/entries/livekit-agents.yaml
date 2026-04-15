@@ -1,15 +1,10 @@
 name: LiveKit Agents
 slug: livekit-agents
-kind: repo
 url: https://docs.livekit.io/agents/
 repo: https://github.com/livekit/agents
 category: outbound
 tags:
   type: framework
-  personas:
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: true
 description: >-

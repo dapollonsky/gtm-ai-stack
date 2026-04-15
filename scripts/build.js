@@ -8,7 +8,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const ENTRIES_DIR = path.join(ROOT, 'data', 'entries');
 const README_PATH = path.join(ROOT, 'README.md');
-const SITE_DATA_PATH = path.join(ROOT, 'site', 'src', 'data', 'entries.json');
 
 const CATEGORIES = [
   {
@@ -235,7 +234,7 @@ async function main() {
     archivedSection,
     '---',
     '',
-    '🌐 [Site](https://dapollonsky.github.io/gtm-ai-stack/) · 🎯 [marketing-ai-stack](https://github.com/dapollonsky/marketing-ai-stack) (stricter marketer-first view) · 📜 [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)',
+    '🎯 [marketing-ai-stack](https://github.com/dapollonsky/marketing-ai-stack) (stricter marketer-first view) · 📜 [MIT](LICENSE) · [CC-BY-SA 4.0](LICENSE-DATA)',
     '',
   ]
     .filter((x) => x !== '')
@@ -243,22 +242,9 @@ async function main() {
 
   await fs.writeFile(README_PATH, md + '\n', 'utf8');
 
-  await fs.mkdir(path.dirname(SITE_DATA_PATH), { recursive: true });
-  const siteData = {
-    built_at: today,
-    categories: CATEGORIES,
-    entries: entries.map((e) => ({ ...e, href: e.repo || e.url })),
-    counts: {
-      active: active.length,
-      watchlist: watchlist.length,
-      archived: archived.length,
-    },
-  };
-  await fs.writeFile(SITE_DATA_PATH, JSON.stringify(siteData, null, 2) + '\n', 'utf8');
-
   const populatedCats = CATEGORIES.filter((c) => byCategory[c.id].length > 0).length;
   console.log(
-    `✓ README.md + site/src/data/entries.json built — ${active.length} active across ${populatedCats}/${CATEGORIES.length} categories`
+    `✓ README.md built — ${active.length} active across ${populatedCats}/${CATEGORIES.length} categories`
   );
 }
 

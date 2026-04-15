@@ -1,15 +1,10 @@
 name: SEO Research MCP
 slug: seo-research-mcp
-kind: repo
 url: https://github.com/egebese/seo-research-mcp
 repo: https://github.com/egebese/seo-research-mcp
 category: seo
 tags:
   type: mcp
-  personas:
-    - marketer
-  openness: oss-mcp-only
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

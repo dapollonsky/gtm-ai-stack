@@ -1,17 +1,10 @@
 name: Suna
 slug: suna
-kind: repo
 url: https://www.suna.so
 repo: https://github.com/kortix-ai/suna
 category: outbound
 tags:
   type: agent
-  personas:
-    - sdr-ae
-    - gtm-eng
-    - founder
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-native
   mcp_ready: true
 description: >-

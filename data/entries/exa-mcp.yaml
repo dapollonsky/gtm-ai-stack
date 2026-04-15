@@ -1,17 +1,10 @@
 name: Exa MCP
 slug: exa-mcp
-kind: repo
 url: https://docs.exa.ai/reference/exa-mcp
 repo: https://github.com/exa-labs/exa-mcp-server
 category: prospecting
 tags:
   type: mcp
-  personas:
-    - sdr-ae
-    - marketer
-    - gtm-eng
-  openness: oss-mcp-only
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

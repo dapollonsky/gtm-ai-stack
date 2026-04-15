@@ -1,18 +1,10 @@
 name: Zapier MCP
 slug: zapier-mcp
-kind: hosted
 url: https://mcp.zapier.com
 repo: https://github.com/zapier/zapier-mcp
 category: plumbing
 tags:
   type: aggregator
-  personas:
-    - marketer
-    - sdr-ae
-    - gtm-eng
-    - founder
-  openness: oss-mcp-only
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

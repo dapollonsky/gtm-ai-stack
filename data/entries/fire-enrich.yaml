@@ -1,16 +1,10 @@
 name: Fire Enrich
 slug: fire-enrich
-kind: repo
 url: https://github.com/firecrawl/fire-enrich
 repo: https://github.com/firecrawl/fire-enrich
 category: prospecting
 tags:
   type: agent
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

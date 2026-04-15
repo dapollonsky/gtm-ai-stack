@@ -1,17 +1,10 @@
 name: GPT Researcher
 slug: gpt-researcher
-kind: repo
 url: https://github.com/assafelovic/gpt-researcher
 repo: https://github.com/assafelovic/gpt-researcher
 category: prospecting
 tags:
   type: agent
-  personas:
-    - sdr-ae
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

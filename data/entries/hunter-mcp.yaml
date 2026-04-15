@@ -1,17 +1,10 @@
 name: Hunter MCP
 slug: hunter-mcp
-kind: repo
 url: https://github.com/hunter-io/hunter-mcp
 repo: https://github.com/hunter-io/hunter-mcp
 category: prospecting
 tags:
   type: mcp
-  personas:
-    - sdr-ae
-    - gtm-eng
-    - marketer
-  openness: oss-mcp-only
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: Official Hunter MCP server for email finding, verification, and domain search built by Hunter.io.

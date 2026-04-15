@@ -1,16 +1,10 @@
 name: Reddit Research MCP
 slug: reddit-research-mcp
-kind: repo
 url: https://github.com/king-of-the-grackles/reddit-research-mcp
 repo: https://github.com/king-of-the-grackles/reddit-research-mcp
 category: social
 tags:
   type: mcp
-  personas:
-    - marketer
-    - sdr-ae
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

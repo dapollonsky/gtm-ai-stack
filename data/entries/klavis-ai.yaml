@@ -1,15 +1,10 @@
 name: Klavis AI
 slug: klavis-ai
-kind: repo
 url: https://www.klavis.ai
 repo: https://github.com/Klavis-AI/klavis
 category: plumbing
 tags:
   type: aggregator
-  personas:
-    - gtm-eng
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

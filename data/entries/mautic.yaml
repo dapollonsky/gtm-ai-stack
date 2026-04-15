@@ -1,15 +1,10 @@
 name: Mautic
 slug: mautic
-kind: repo
 url: https://www.mautic.org
 repo: https://github.com/mautic/mautic
 category: plumbing
 tags:
   type: app
-  personas:
-    - marketer
-  openness: oss
-  maturity: production
   ai_nativeness: substrate
   mcp_ready: false
 description: >-

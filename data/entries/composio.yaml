@@ -1,16 +1,10 @@
 name: Composio
 slug: composio
-kind: repo
 url: https://composio.dev
 repo: https://github.com/ComposioHQ/composio
 category: plumbing
 tags:
   type: aggregator
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

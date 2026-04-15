@@ -1,15 +1,10 @@
 name: AI Company Researcher
 slug: ai-company-researcher
-kind: repo
 url: https://github.com/mayooear/ai-company-researcher
 repo: https://github.com/mayooear/ai-company-researcher
 category: prospecting
 tags:
   type: agent
-  personas:
-    - sdr-ae
-  openness: oss
-  maturity: reference
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

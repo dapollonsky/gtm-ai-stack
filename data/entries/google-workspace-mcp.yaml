@@ -1,18 +1,10 @@
 name: Google Workspace MCP
 slug: google-workspace-mcp
-kind: repo
 url: https://github.com/taylorwilsdon/google_workspace_mcp
 repo: https://github.com/taylorwilsdon/google_workspace_mcp
 category: plumbing
 tags:
   type: mcp
-  personas:
-    - marketer
-    - sdr-ae
-    - gtm-eng
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

@@ -42,15 +42,11 @@ function canonicalize(entry) {
   return {
     name: entry.name,
     slug: entry.slug,
-    kind: entry.kind,
     url: entry.url,
     repo: entry.repo ?? null,
     category: entry.category,
     tags: {
       type: entry.tags.type,
-      personas: entry.tags.personas,
-      openness: entry.tags.openness,
-      maturity: entry.tags.maturity,
       ai_nativeness: entry.tags.ai_nativeness,
       mcp_ready: entry.tags.mcp_ready,
     },
@@ -92,7 +88,7 @@ async function main() {
     const raw = await fs.readFile(fp, 'utf8');
     const entry = yaml.load(raw);
 
-    if (entry.kind !== 'repo' || !entry.repo) {
+    if (!entry.repo) {
       await fs.writeFile(fp, yaml.dump(canonicalize(entry), { lineWidth: 100, noRefs: true }), 'utf8');
       skipped++;
       continue;

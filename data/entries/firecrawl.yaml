@@ -1,15 +1,10 @@
 name: Firecrawl
 slug: firecrawl
-kind: repo
 url: https://www.firecrawl.dev
 repo: https://github.com/firecrawl/firecrawl
 category: prospecting
 tags:
   type: library
-  personas:
-    - gtm-eng
-  openness: oss-core
-  maturity: production
   ai_nativeness: substrate
   mcp_ready: true
 description: >-

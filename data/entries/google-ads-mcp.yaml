@@ -1,16 +1,10 @@
 name: Google Ads MCP
 slug: google-ads-mcp
-kind: repo
 url: https://github.com/googleads/google-ads-mcp
 repo: https://github.com/googleads/google-ads-mcp
 category: ads
 tags:
   type: mcp
-  personas:
-    - marketer
-    - gtm-eng
-  openness: oss
-  maturity: beta
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

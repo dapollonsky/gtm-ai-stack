@@ -1,16 +1,10 @@
 name: MoneyPrinterTurbo
 slug: moneyprinterturbo
-kind: repo
 url: https://github.com/harry0703/MoneyPrinterTurbo
 repo: https://github.com/harry0703/MoneyPrinterTurbo
 category: social
 tags:
   type: app
-  personas:
-    - marketer
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

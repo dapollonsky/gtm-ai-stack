@@ -1,16 +1,10 @@
 name: SalesGPT
 slug: salesgpt
-kind: repo
 url: https://github.com/filip-michalsky/SalesGPT
 repo: https://github.com/filip-michalsky/SalesGPT
 category: outbound
 tags:
   type: agent
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: reference
   ai_nativeness: ai-native
   mcp_ready: false
 description: >-

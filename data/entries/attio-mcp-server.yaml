@@ -1,16 +1,10 @@
 name: Attio MCP Server
 slug: attio-mcp-server
-kind: repo
 url: https://github.com/kesslerio/attio-mcp-server
 repo: https://github.com/kesslerio/attio-mcp-server
 category: plumbing
 tags:
   type: mcp
-  personas:
-    - sdr-ae
-    - gtm-eng
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: true
 description: >-

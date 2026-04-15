@@ -1,16 +1,10 @@
 name: Postiz
 slug: postiz
-kind: repo
 url: https://postiz.com
 repo: https://github.com/gitroomhq/postiz-app
 category: social
 tags:
   type: app
-  personas:
-    - marketer
-    - founder
-  openness: oss
-  maturity: production
   ai_nativeness: ai-enabled
   mcp_ready: false
 description: >-

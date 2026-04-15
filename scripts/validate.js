@@ -65,10 +65,6 @@ async function main() {
     }
     slugs.add(entry.slug);
 
-    if (entry.kind === 'repo' && !entry.repo) {
-      console.error(`✗ ${file}: kind=repo requires a repo URL`);
-      errorCount++;
-    }
     if (entry.repo && !/^https:\/\/github\.com\//.test(entry.repo)) {
       console.error(`✗ ${file}: repo must start with https://github.com/`);
       errorCount++;
