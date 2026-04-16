@@ -9,7 +9,7 @@
           ░▒▓  AI × go-to-market, from prospecting to plumbing  ▓▒░
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
-🎯 **39 active** · ⚠️ **9 watchlist** · 📦 **3 archived** · 🔄 built 2026-04-15
+🎯 **39 active** · ⚠️ **9 watchlist** · 📦 **3 archived** · 🔄 built 2026-04-16
 > Generated from [`data/entries/*.yaml`](data/entries) — open a PR against a YAML entry, not this file.
 ## ⚡ What
 A curated, editorially-maintained map of AI-native tools and MCP plumbing for go-to-market teams — sales, marketing, and the plumbing that powers them. Every entry answers one question: **what specific GTM job does this do better than not having it?**
@@ -32,10 +32,10 @@ A curated, editorially-maintained map of AI-native tools and MCP plumbing for go
 
 | Project | Type | AI | MCP | ⭐ | 🔄 | Why |
 |---|---|---|---|---|---|---|
-| [Firecrawl](https://github.com/firecrawl/firecrawl) | Library | Substrate | ✓ | 109.5k | 2026-04 | The crawler layer behind most OSS lead-research and competitor-monitoring agents — effectively universal in 2026 GTM agent stacks because scraping HTML into clean markdown is the unglamorous step everyone else gets wrong. |
+| [Firecrawl](https://github.com/firecrawl/firecrawl) | Library | Substrate | ✓ | 109.7k | 2026-04 | The crawler layer behind most OSS lead-research and competitor-monitoring agents — effectively universal in 2026 GTM agent stacks because scraping HTML into clean markdown is the unglamorous step everyone else gets wrong. |
 | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | Agent | AI-native |  | 26.5k | 2026-03 | The most battle-tested OSS foundation for account research packets in 2026 — sellers get a standalone agent that builds a sourced dossier before every discovery call without paying Clay or Perplexity Enterprise. |
-| [OpenFang](https://github.com/RightNow-AI/openfang) | Agent | AI-native |  | 16.6k | 2026-04 | The closest OSS analogue to stitching Clay together with an AI SDR product — founders and lean sales teams get a lights-out prospect engine without a Clay bill or an 11x contract. |
-| [Exa MCP](https://github.com/exa-labs/exa-mcp-server) | MCP | AI-enabled | ✓ | 4.2k | 2026-04 | The default search primitive for any prospect or account research agent — neural search returns the right company or news item on the first try where keyword search would miss it. |
+| [OpenFang](https://github.com/RightNow-AI/openfang) | Agent | AI-native |  | 16.7k | 2026-04 | The closest OSS analogue to stitching Clay together with an AI SDR product — founders and lean sales teams get a lights-out prospect engine without a Clay bill or an 11x contract. |
+| [Exa MCP](https://github.com/exa-labs/exa-mcp-server) | MCP | AI-enabled | ✓ | 4.3k | 2026-04 | The default search primitive for any prospect or account research agent — neural search returns the right company or news item on the first try where keyword search would miss it. |
 | [Apollo MCP](https://github.com/Chainscore/apollo-io-mcp) | MCP | AI-enabled | ✓ | 1 | 2026-02 | The most complete community bridge between agents and Apollo until a first-party server ships — SDRs can hand the whole prospecting loop (search → enrich → sequence) to an agent working inside Claude or Cursor. |
 
 <a id="outbound"></a>
@@ -62,9 +62,9 @@ A curated, editorially-maintained map of AI-native tools and MCP plumbing for go
 
 | Project | Type | AI | MCP | ⭐ | 🔄 | Why |
 |---|---|---|---|---|---|---|
-| [mcp-gsc](https://github.com/AminForou/mcp-gsc) | MCP | AI-enabled | ✓ | 689 | 2026-04 | Lets a marketer have the model narrate query performance, diagnose ranking drops, and suggest content fixes without opening GSC — the fastest way to turn weekly SEO review meetings into a single Claude thread. |
-| [RustySEO](https://github.com/mascanho/RustySEO) | App | AI-enabled |  | 197 | 2026-04 | The most promising OSS Screaming Frog alternative with AI-era features — marketers get a native desktop app they own rather than a licensed per-seat crawler. |
-| [DataForSEO MCP](https://github.com/dataforseo/mcp-server-typescript) | MCP | AI-enabled | ✓ | 176 | 2026-04 | The most comprehensive agent-ready SEO data layer — one MCP install gets a marketer the same data set Semrush and Ahrefs sell, usable from any MCP-capable client. |
+| [mcp-gsc](https://github.com/AminForou/mcp-gsc) | MCP | AI-enabled | ✓ | 690 | 2026-04 | Lets a marketer have the model narrate query performance, diagnose ranking drops, and suggest content fixes without opening GSC — the fastest way to turn weekly SEO review meetings into a single Claude thread. |
+| [RustySEO](https://github.com/mascanho/RustySEO) | App | AI-enabled |  | 199 | 2026-04 | The most promising OSS Screaming Frog alternative with AI-era features — marketers get a native desktop app they own rather than a licensed per-seat crawler. |
+| [DataForSEO MCP](https://github.com/dataforseo/mcp-server-typescript) | MCP | AI-enabled | ✓ | 177 | 2026-04 | The most comprehensive agent-ready SEO data layer — one MCP install gets a marketer the same data set Semrush and Ahrefs sell, usable from any MCP-capable client. |
 | [SEO Research MCP](https://github.com/egebese/seo-research-mcp) | MCP | AI-enabled | ✓ | 171 | 2026-01 | Useful for marketing engineers who want to run Ahrefs-quality SEO research from inside Claude Code or Cursor — keeps the workflow in the editor instead of bouncing into Ahrefs' UI. |
 | [GEO AI Agent](https://github.com/brightdata/geo-ai-agent) | Agent | AI-native |  | 153 | 2025-10 | Measures and improves how a brand shows up in ChatGPT, Perplexity, and Gemini answers — the first OSS answer to closed GEO tools as buyer research shifts from Google to LLM chats. |
 
@@ -73,19 +73,19 @@ A curated, editorially-maintained map of AI-native tools and MCP plumbing for go
 
 | Project | Type | AI | MCP | ⭐ | 🔄 | Why |
 |---|---|---|---|---|---|---|
-| [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | App | AI-native |  | 55.7k | 2026-04 | By far the most popular OSS pipeline for shipping TikToks and Shorts — rough edges, but lets a solo marketer go from topic to posted video without touching a timeline editor. |
-| [Postiz](https://github.com/gitroomhq/postiz-app) | App | AI-enabled |  | 28.6k | 2026-04 | The clearest "replace Buffer" OSS story — very actively maintained, covers every channel a modern founder posts to, and keeps the content history and analytics on the team's own infrastructure. |
+| [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | App | AI-native |  | 55.8k | 2026-04 | By far the most popular OSS pipeline for shipping TikToks and Shorts — rough edges, but lets a solo marketer go from topic to posted video without touching a timeline editor. |
+| [Postiz](https://github.com/gitroomhq/postiz-app) | App | AI-enabled |  | 28.7k | 2026-04 | The clearest "replace Buffer" OSS story — very actively maintained, covers every channel a modern founder posts to, and keeps the content history and analytics on the team's own infrastructure. |
 | [Viral Clips Crew](https://github.com/alexfazio/viral-clips-crew) | Template | AI-native |  | 755 | 2026-02 | The cleanest reference architecture for a video-repurposing agent — easy to fork for podcast or YouTube pipelines, so a single founder can run what used to be an editor's entire job. |
-| [Reddit Research MCP](https://github.com/king-of-the-grackles/reddit-research-mcp) | MCP | AI-enabled | ✓ | 105 | 2025-12 | The bridge between agents and Reddit community intelligence — marketers surface real buyer language and pain points for content ideation and prospect research without paying for Reddit Pro or GummySearch. |
+| [Reddit Research MCP](https://github.com/king-of-the-grackles/reddit-research-mcp) | MCP | AI-enabled | ✓ | 106 | 2025-12 | The bridge between agents and Reddit community intelligence — marketers surface real buyer language and pain points for content ideation and prospect research without paying for Reddit Pro or GummySearch. |
 
 <a id="ads"></a>
 ### 💰 Ads & Creative
 
 | Project | Type | AI | MCP | ⭐ | 🔄 | Why |
 |---|---|---|---|---|---|---|
-| [Meta Ads MCP](https://github.com/pipeboard-co/meta-ads-mcp) | MCP | AI-enabled | ✓ | 776 | 2026-04 | The most-used bridge between agents and Meta Ads Manager — lets a paid marketer ask "which ad set is leaking spend" and get an answer back without clicking through seven Ads Manager tabs. |
-| [Google Ads MCP](https://github.com/googleads/google-ads-mcp) | MCP | AI-enabled | ✓ | 377 | 2026-04 | Lets paid teams drive campaigns by natural language without learning the Google Ads UI — the biggest single time-saver for performance marketers running Search and Performance Max in 2026. |
-| [Ads MCP (multi-platform)](https://github.com/amekala/ads-mcp) | MCP | AI-enabled | ✓ | 30 | 2026-04 | The fastest way to give an agent multi-channel paid read/write access from a single endpoint — one install unlocks the whole paid stack instead of running four separate MCP servers. |
+| [Meta Ads MCP](https://github.com/pipeboard-co/meta-ads-mcp) | MCP | AI-enabled | ✓ | 779 | 2026-04 | The most-used bridge between agents and Meta Ads Manager — lets a paid marketer ask "which ad set is leaking spend" and get an answer back without clicking through seven Ads Manager tabs. |
+| [Google Ads MCP](https://github.com/googleads/google-ads-mcp) | MCP | AI-enabled | ✓ | 378 | 2026-04 | Lets paid teams drive campaigns by natural language without learning the Google Ads UI — the biggest single time-saver for performance marketers running Search and Performance Max in 2026. |
+| [Ads MCP (multi-platform)](https://github.com/amekala/ads-mcp) | MCP | AI-enabled | ✓ | 31 | 2026-04 | The fastest way to give an agent multi-channel paid read/write access from a single endpoint — one install unlocks the whole paid stack instead of running four separate MCP servers. |
 
 <a id="meetings"></a>
 ### 🎙️ Meetings & Conversation Intelligence
@@ -110,15 +110,15 @@ A curated, editorially-maintained map of AI-native tools and MCP plumbing for go
 | [Twenty](https://github.com/twentyhq/twenty) | CRM | Substrate | ✓ | 44.0k | 2026-04 | Gives RevOps teams that want full control of pipeline data, custom fields, and workflows a credible core to build on instead of renting Salesforce or HubSpot — and the API is permissive enough for agents to drive the whole thing. |
 | [Composio](https://github.com/ComposioHQ/composio) | Aggregator | AI-enabled | ✓ | 27.8k | 2026-04 | The cleanest option when GTM engineers assemble custom agents on LangGraph or the OpenAI Agents SDK — one SDK loads only the tools the agent actually needs, instead of polluting the context window with hundreds of schemas. |
 | [Mastra](https://github.com/mastra-ai/mastra) | Framework | AI-native | ✓ | 23.0k | 2026-04 | The strongest choice for Node and TypeScript shops building GTM agents — keeps the entire stack in TS instead of forcing engineers into Python just to use LangChain. |
-| [Mautic](https://github.com/mautic/mautic) | App | Substrate |  | 9.4k | 2026-04 | Lets a marketer own their whole automation stack — sequences, segmentation, landing pages — and layer any LLM or agent on top via the API, instead of paying Marketo or HubSpot Marketing Hub forever. |
+| [Mautic](https://github.com/mautic/mautic) | App | Substrate |  | 9.5k | 2026-04 | Lets a marketer own their whole automation stack — sequences, segmentation, landing pages — and layer any LLM or agent on top via the API, instead of paying Marketo or HubSpot Marketing Hub forever. |
 | [Klavis AI](https://github.com/Klavis-AI/klavis) | Aggregator | AI-enabled | ✓ | 5.7k | 2026-04 | GTM engineers get a single aggregator that handles OAuth and per-agent tool scoping, plus sandboxes to eval agents before production — the fastest way to go from "interesting prototype" to a tested agent in a real org. |
 | [Notion MCP](https://github.com/makenotion/notion-mcp-server) | MCP | AI-enabled | ✓ | 4.2k | 2026-03 | Makes Notion the live content and docs substrate for marketing agents — briefs, editorial calendars, and campaign specs become readable and writable by Claude or Cursor without copy-paste. |
 | [Google Workspace MCP](https://github.com/taylorwilsdon/google_workspace_mcp) | MCP | AI-enabled | ✓ | 2.1k | 2026-04 | Replaces four or five separate Google integrations with one hardened server, so any GTM agent can read email threads, book meetings, and update spreadsheets without the team standing up its own OAuth gauntlet. |
 | [Salesforce DX MCP](https://github.com/salesforcecli/mcp) | MCP | AI-enabled | ✓ | 355 | 2026-04 | Gives RevOps and GTM engineers in Salesforce-shop orgs a first-party, actively-maintained agent interface to pipeline data and admin actions — no more brittle Einstein or Apex copilot glue. |
 | [Attio MCP Server](https://github.com/kesslerio/attio-mcp-server) | MCP | AI-enabled | ✓ | 65 | 2026-04 | Attio shops get a feature-complete agent bridge years before the vendor ships an official server, so reps can let Claude or Cursor update the CRM without leaving the conversation. |
-| [Clay MCP](https://github.com/clay-inc/clay-mcp) | MCP | AI-enabled | ✓ | — | — | Plugs the enrichment layer that most 2026 GTM engineering teams already depend on straight into agents — the native way to have Claude or Cursor run Clay lookups inside a larger workflow. |
+| [Zapier MCP](https://github.com/zapier/zapier-mcp) | Aggregator | AI-enabled | ✓ | 31 | 2026-04 | Instantly gives an agent read/write access to Outreach, Salesloft, Front, Lemlist, ActiveCampaign, Marketo, Iterable, Close, and every other tool without a native MCP — the fastest way to backfill a long tail of GTM integrations. |
+| [Clay MCP](https://github.com/clay-inc/clay-mcp) | MCP | AI-enabled | ✓ | 30 | 2026-02 | Plugs the enrichment layer that most 2026 GTM engineering teams already depend on straight into agents — the native way to have Claude or Cursor run Clay lookups inside a larger workflow. |
 | [HubSpot MCP](https://developers.hubspot.com/mcp) | MCP | AI-enabled | ✓ | — | — | Lets marketers and reps drive the entire HubSpot CRM from an agent without touching the native UI or waiting on Breeze — the default entry point for any HubSpot-shop GTM automation built in 2026. |
-| [Zapier MCP](https://github.com/zapier/zapier-mcp) | Aggregator | AI-enabled | ✓ | — | — | Instantly gives an agent read/write access to Outreach, Salesloft, Front, Lemlist, ActiveCampaign, Marketo, Iterable, Close, and every other tool without a native MCP — the fastest way to backfill a long tail of GTM integrations. |
 
 <a id="watchlist"></a>
 ### ⚠️ Watchlist

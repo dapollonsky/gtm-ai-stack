@@ -16,8 +16,8 @@ why_it_matters: >-
   a long tail of GTM integrations.
 closed_alternative: Direct per-tool integrations
 stats:
-  stars: null
-  last_commit: null
+  stars: 31
+  last_commit: '2026-04-15'
   license: null
 submitted: '2026-04-15'
 status: active
