@@ -16,8 +16,8 @@ why_it_matters: >-
   a tested agent in a real org.
 closed_alternative: Direct per-tool integrations
 stats:
-  stars: 5709
-  last_commit: '2026-04-15'
+  stars: 5710
+  last_commit: '2026-04-17'
   license: Apache-2.0
 submitted: '2026-04-15'
 status: active
