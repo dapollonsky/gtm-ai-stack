@@ -15,8 +15,8 @@ why_it_matters: >-
   interface to pipeline data and admin actions — no more brittle Einstein or Apex copilot glue.
 closed_alternative: Salesforce Einstein / Apex copilots
 stats:
-  stars: 355
-  last_commit: '2026-04-15'
+  stars: 366
+  last_commit: '2026-04-20'
   license: Apache-2.0
 submitted: '2026-04-15'
 status: active
