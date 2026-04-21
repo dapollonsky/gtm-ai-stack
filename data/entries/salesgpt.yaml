@@ -15,7 +15,7 @@ why_it_matters: >-
   commits since September 2024, so not a safe production base for a 2026 build.
 closed_alternative: 11x, Artisan
 stats:
-  stars: 2571
+  stars: 2578
   last_commit: '2024-09-17'
   license: MIT
 submitted: '2026-04-15'

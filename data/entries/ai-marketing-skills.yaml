@@ -17,8 +17,8 @@ why_it_matters: >-
   minutes instead of building them.
 closed_alternative: Custom Clay + 11x builds
 stats:
-  stars: 1823
-  last_commit: '2026-04-06'
+  stars: 2043
+  last_commit: '2026-04-19'
   license: MIT
 submitted: '2026-04-15'
 status: active
