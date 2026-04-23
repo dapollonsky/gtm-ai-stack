@@ -15,8 +15,8 @@ why_it_matters: >-
   prebuilt crew, swap in your own tools and data, and skip weeks of framework plumbing.
 closed_alternative: LangChain, custom agent scaffolding
 stats:
-  stars: 48953
-  last_commit: '2026-04-15'
+  stars: 49606
+  last_commit: '2026-04-23'
   license: MIT
 submitted: '2026-04-15'
 status: active
