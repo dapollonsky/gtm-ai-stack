@@ -16,8 +16,8 @@ why_it_matters: >-
   not the audio stack.
 closed_alternative: Vapi, Retell AI
 stats:
-  stars: 10058
-  last_commit: '2026-04-15'
+  stars: 10204
+  last_commit: '2026-04-24'
   license: Apache-2.0
 submitted: '2026-04-15'
 status: active
