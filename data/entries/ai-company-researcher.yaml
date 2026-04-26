@@ -15,7 +15,7 @@ why_it_matters: >-
   upstream, so still useful as a fork base for SDRs but not a maintained tool.
 closed_alternative: Clay, Clearbit
 stats:
-  stars: 192
+  stars: 195
   last_commit: '2026-03-27'
   license: null
 submitted: '2026-04-15'

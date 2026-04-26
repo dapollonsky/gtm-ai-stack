@@ -16,8 +16,8 @@ why_it_matters: >-
   window with hundreds of schemas.
 closed_alternative: Direct per-tool integrations
 stats:
-  stars: 27792
-  last_commit: '2026-04-15'
+  stars: 27914
+  last_commit: '2026-04-25'
   license: MIT
 submitted: '2026-04-15'
 status: active
