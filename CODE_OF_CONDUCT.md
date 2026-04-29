@@ -4,7 +4,7 @@ This project has adopted the [Contributor Covenant, version 2.1](https://www.con
 
 ## Scope
 
-This Code applies within all project spaces — issues, pull requests, discussions, and any other venue where someone represents the project — and when an individual is officially representing the project in public.
+This Code applies within all project spaces (issues, pull requests, discussions, and any other venue where someone represents the project) and when an individual is officially representing the project in public.
 
 ## Reporting
 
