@@ -15,8 +15,8 @@ why_it_matters: >-
   founder posts to, and keeps the content history and analytics on the team's own infrastructure.
 closed_alternative: Buffer, Hootsuite, Typefully
 stats:
-  stars: 28613
-  last_commit: '2026-04-15'
+  stars: 29970
+  last_commit: '2026-05-04'
   license: AGPL-3.0
 submitted: '2026-04-15'
 status: active
