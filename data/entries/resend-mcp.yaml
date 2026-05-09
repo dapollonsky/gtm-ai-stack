@@ -15,8 +15,8 @@ why_it_matters: >-
   gets a drafted email out the door with the deliverability of Resend, no SendGrid contract.
 closed_alternative: SendGrid, Postmark, Mailgun
 stats:
-  stars: 500
-  last_commit: '2026-04-14'
+  stars: 507
+  last_commit: '2026-05-09'
   license: MIT
 submitted: '2026-04-15'
 status: active

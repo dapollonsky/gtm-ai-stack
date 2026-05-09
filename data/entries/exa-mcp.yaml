@@ -15,8 +15,8 @@ why_it_matters: >-
   the right company or news item on the first try where keyword search would miss it.
 closed_alternative: Google search + Perplexity API
 stats:
-  stars: 4249
-  last_commit: '2026-04-15'
+  stars: 4401
+  last_commit: '2026-05-07'
   license: MIT
 submitted: '2026-04-15'
 status: active
