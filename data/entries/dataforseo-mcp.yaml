@@ -15,8 +15,8 @@ why_it_matters: >-
   set Semrush and Ahrefs sell, usable from any MCP-capable client.
 closed_alternative: Semrush, Ahrefs
 stats:
-  stars: 176
-  last_commit: '2026-04-14'
+  stars: 196
+  last_commit: '2026-05-11'
   license: Apache-2.0
 submitted: '2026-04-15'
 status: active

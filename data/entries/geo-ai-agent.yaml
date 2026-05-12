@@ -15,8 +15,8 @@ why_it_matters: >-
   OSS answer to closed GEO tools as buyer research shifts from Google to LLM chats.
 closed_alternative: Profound, Athena GEO
 stats:
-  stars: 153
+  stars: 159
   last_commit: '2025-10-20'
   license: null
 submitted: '2026-04-15'
-status: active
+status: watchlist
