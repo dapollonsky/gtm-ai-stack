@@ -13,7 +13,7 @@ why_it_matters: >-
   audio — one codebase to crib from instead of stitching Jasper and ElevenLabs together.
 closed_alternative: Jasper, ElevenLabs
 stats:
-  stars: 388
+  stars: 390
   last_commit: '2025-07-04'
   license: null
 submitted: '2026-04-15'
