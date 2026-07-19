@@ -1,0 +1,23 @@
+name: Xquik
+slug: xquik
+url: https://docs.xquik.com
+repo: https://github.com/Xquik-dev/x-twitter-scraper
+category: social
+tags:
+  type: mcp
+  ai_nativeness: substrate
+  mcp_ready: true
+description: >-
+  X/Twitter API and MCP server for search, monitoring, media, webhooks, and posting
+  automation.
+why_it_matters: >-
+  Gives GTM engineers one agent-ready X surface for monitoring buyer conversations,
+  pulling source posts, and triggering reply workflows without maintaining a custom
+  social data integration.
+closed_alternative: Brandwatch
+stats:
+  stars: null
+  last_commit: null
+  license: null
+submitted: '2026-06-15'
+status: active
