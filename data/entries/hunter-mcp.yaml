@@ -13,7 +13,7 @@ why_it_matters: >-
   integration, no brittle scraping, and no paid-per-seat Hunter UI.
 closed_alternative: Hunter's native UI
 stats:
-  stars: 8
+  stars: 9
   last_commit: '2025-07-07'
   license: MIT
 submitted: '2026-04-15'
