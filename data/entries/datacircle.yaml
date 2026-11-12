@@ -1,0 +1,22 @@
+name: Datacircle
+slug: datacircle
+url: https://datacircle.dev
+repo: null
+category: prospecting
+tags:
+  type: mcp
+  ai_nativeness: substrate
+  mcp_ready: true
+description: >-
+  Open MCP server at api.datacircle.dev/mcp, no key, with list_apis and search_plans to find
+  the best GTM data APIs and their plans by provider or price.
+why_it_matters: >-
+  Lets a GTM engineer pick a data API for prospecting or enrichment by asking an agent, from
+  a scored sheet of plans, instead of reading each provider's pricing page.
+closed_alternative: G2
+stats:
+  stars: null
+  last_commit: null
+  license: null
+submitted: '2026-11-13'
+status: active
